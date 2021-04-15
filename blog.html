@@ -1,26 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Planted Blog</title>
-  <link rel="stylesheet" href="./styles/styles.css">
-  <!-- include google fonts -->
-  <!-- include font awesome -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planted Blog</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- include google fonts -->
+    <!-- include font awesome -->
 </head>
+
 <body>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <p class="logo">Planted</p>
-        <ul class="nav">
-          <li><a href="#">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="/blog.html">blog</a></li>
-          <li><a href="/contact.html">contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- black nav -->
+    <nav>
+        <div class="wrapper">
+            <p class="logo">Planted</p>
+            <ul class="nav">
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="/blog.html">blog</a></li>
+                <li><a href="/contact.html">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- background image header -->
+    <header>
+        <div class="wrapper">
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <!-- size this bigger than the side bar, poistion: relative  -->
+            <div class="about-image">
+                <img src="./assets/side-bar-image.jpg" alt="an old open window on an old building">
+            </div>
+            <div class="about-text">
+                <h3>About Planted</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aperiam?</p>
+            </div>
+            <div class="posts-text">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+            </div>
+        </aside>
+        <section class="mission-comments-form">
+            <div class="wrapper">
+                <article class="mission">
+                    <div class="mission-image">
+                        <img src="./assets/post-image.jpg" alt="some faded rubber plant leaves">
+                    </div>
+                    <div class="mission-text">
+                        <h2>Our mission at Planted</h2>
+                        <h3>Monday January 21st, 2019 by <span>Yousra</span></h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas autem laudantium corrupti est assumenda itaque.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt modi vitae dignissimos maxime nulla voluptates iure dolores quae, consequuntur sed recusandae eos beatae itaque corrupti facilis aut quisquam eum corporis.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam et ut dignissimos, dolorum vero corporis quia voluptate, ipsum accusantium distinctio fuga iusto suscipit officiis praesentium repudiandae dolorem. Aspernatur similique eligendi placeat tenetur in suscipit, dicta rem molestias vero eum, cum incidunt sunt voluptatum earum obcaecati corrupti non architecto quia magni recusandae? Architecto, tempore explicabo. Ducimus incidunt voluptatum inventore blanditiis enim modi in, mollitia a atque laudantium odio sed, fugiat culpa!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo quaerat ipsum laboriosam veritatis. Dicta.</p>
+                    </div>
+                </article>
+                <section class="comments">
+                    <ul>
+                        <li>
+                            <img src="./assets/profile-image.jpg" alt="Jeremy's face">
+                            <p><time datetime="2018-19-09">Tuesday October 9th, 2018</time> by Jeremy</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis eligendi dolorum nulla pariatur expedita. Temporibus accusamus ea tenetur dolore molestias velit quod dolorem iure assumenda?</p>
+                        </li>
+                        <li>
+                            <img src="./assets/profile-image-2.jpg" alt="Julia's face">
+                            <p><time datetime="2018-10-10">Wednesday October 10th, 2018</time> by Julia</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero perferendis fuga natus esse inventore ipsa, nesciunt tenetur ipsum facilis dolores.</p>
+                        </li>
+                    </ul>
+                </section>
+                <form action="POST">
+                    <!-- flex fieldset column -->
+                    <fieldset>
+                        <!-- flex name-email row -->
+                        <div class="name-email">
+                            <label for="user-name" class="visuallyHidden">Name</label>
+                            <input type="text" id="user-name" placeholder="Name">
+
+                            <label for="user-email" class="visuallyHidden">Email address</label>
+                            <input type="text" id="user-name" placeholder="Email address">
+                        </div>
+                        
+                        <label for="comment" class="visuallyHidden">Comments</label>
+                        <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Comment"></textarea>
+
+                        <button type="submit">Post Comment</button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2018 Juno</p>
+    </footer>
 </body>
+
 </html>
