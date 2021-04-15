@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
-  body {
+  body,
+  .logo {
     font-family: 'Josefin Sans', sans-serif; 
     font-size: 2rem;
   }
@@ -12,3 +13,20 @@ p,
   font-family: 'Roboto', sans-serif;
 }
 
+header,
+.nav a {
+  color: #fff;
+}
+
+.logo {
+  font-size: 4.2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: $yellow;
+}

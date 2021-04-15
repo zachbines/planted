@@ -225,7 +225,8 @@ html {
   font-size: 62.5%;
 }
 
-html body {
+html body,
+html .logo {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
 }
@@ -233,4 +234,51 @@ html body {
 p,
 .posts-text li {
   font-family: 'Roboto', sans-serif;
+}
+
+header,
+.nav a {
+  color: #fff;
+}
+
+.logo {
+  font-size: 4.2rem;
+}
+
+.nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #f8e71c;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.home-header {
+  height: 90vh;
+  background-image: url("../assets/home-image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-header nav .logo {
+  font-size: 4.2rem;
+}
+
+.home-header nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
