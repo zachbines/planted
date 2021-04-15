@@ -225,8 +225,7 @@ html {
   font-size: 62.5%;
 }
 
-html body,
-html .logo {
+html body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
 }
@@ -243,6 +242,7 @@ header,
 
 .logo {
   font-size: 4.2rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .nav a {
@@ -254,9 +254,14 @@ header,
   color: #f8e71c;
 }
 
+.home-planted {
+  font-size: 16.6rem;
+  opacity: 0;
+}
+
 .wrapper {
   max-width: 1280px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -271,14 +276,22 @@ header,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  width: 50%;
 }
 
-.home-header nav .logo {
-  font-size: 4.2rem;
-}
-
-.home-header nav .nav {
+.nav {
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

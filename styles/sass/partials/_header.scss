@@ -1,6 +1,6 @@
 .wrapper {
   max-width: 1280px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -14,12 +14,21 @@
 // put contact/blog header here (cause they are styled a lil differently
 .home-header nav {
   display: flex;
-  .logo {
-    font-size: 4.2rem;
-  }
-  .nav {
-    display: flex;
+  justify-content: space-between;
+  padding: 20px;  
+  width: 50%;
+}
+
+.nav {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  li {
+
   }
 }
+  
+
 //also .blog-contact-nav to add background color
 

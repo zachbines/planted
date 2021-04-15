@@ -1,15 +1,13 @@
 html {
   font-size: 62.5%;
-  body,
-  .logo {
+  body {
     font-family: 'Josefin Sans', sans-serif; 
     font-size: 2rem;
   }
 }
 
 p,
-.posts-text li
- {
+.posts-text li {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -20,6 +18,7 @@ header,
 
 .logo {
   font-size: 4.2rem;
+  font-family: 'Josefin Sans', sans-serif; 
 }
 
 .nav a {
@@ -29,4 +28,9 @@ header,
 
 .nav a:hover {
   color: $yellow;
+}
+
+.home-planted {
+  font-size: 16.6rem;
+  opacity: 0;
 }
