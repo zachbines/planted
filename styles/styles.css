@@ -242,12 +242,14 @@ header,
 
 .logo {
   font-size: 4.2rem;
+  letter-spacing: 1px;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .nav a {
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .nav a:hover {
@@ -256,17 +258,22 @@ header,
 
 .home-planted {
   font-size: 16.6rem;
-  opacity: 0;
+  letter-spacing: 3px;
+  margin-left: 10px;
+}
+
+.home-planted span {
+  color: #f8e71c;
 }
 
 .wrapper {
-  max-width: 1280px;
-  width: 95%;
+  max-width: 1350px;
+  width: 90%;
   margin: 0 auto;
 }
 
 .home-header {
-  height: 90vh;
+  height: 80vh;
   background-image: url("../assets/home-image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -279,19 +286,46 @@ header,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
-  width: 50%;
+  padding: 25px 0;
+  width: 53%;
 }
 
-.nav {
+ul.nav {
   width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 20px;
+  margin-bottom: 8px;
+}
+
+ul.nav li a {
+  padding: 10px;
+}
+
+.layered-background {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../assets/header-box.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.layered-background h1.home-planted {
+  width: 40%;
+  margin-top: 50px;
 }

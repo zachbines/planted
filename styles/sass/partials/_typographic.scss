@@ -18,19 +18,25 @@ header,
 
 .logo {
   font-size: 4.2rem;
+  letter-spacing: 1px;
   font-family: 'Josefin Sans', sans-serif; 
 }
 
 .nav a {
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.nav a:hover {
-  color: $yellow;
+  letter-spacing: 1px;
+  &:hover {
+    color: $yellow;
+  }
 }
 
 .home-planted {
   font-size: 16.6rem;
-  opacity: 0;
+  letter-spacing: 3px;
+  margin-left: 10px;
+  span {
+      color: $yellow;
+  }
+  // opacity: 0;
 }
