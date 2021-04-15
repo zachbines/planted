@@ -221,6 +221,16 @@ textarea {
   overflow: hidden;
 }
 
-body {
+html {
+  font-size: 62.5%;
+}
+
+html body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+}
+
+p,
+.posts-text li {
   font-family: 'Roboto', sans-serif;
 }
