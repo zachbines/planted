@@ -300,6 +300,7 @@ section.about h2 {
   background-image: url("../assets/home-image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   z-index: 10;
 }
 
