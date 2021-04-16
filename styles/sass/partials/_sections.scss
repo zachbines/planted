@@ -1,7 +1,7 @@
-// about section - home page
+// about section - home page +++++======++++++======+++++++
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 section.about {
@@ -12,10 +12,6 @@ section.about {
   .about-text {
     width: 80%;
     margin: 20px auto 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     p {
       margin: 20px 0 30px;
     }
@@ -24,8 +20,8 @@ section.about {
 
 // general button styling
 .button {
-  display: flex;
-  // display: inline-block;
+  display: block;
+  margin: 0 auto;
   width: 200px;
   height: 48px;
   text-decoration: none;
@@ -33,15 +29,17 @@ section.about {
   font-weight: 600;
   background: $lightGreen;
   line-height: 32px;
+  text-align: center;
   padding: 10px;
 }
 
 // read more buttons
 .rm-button {
-  width: 140px;
+  margin: 0;
+  width: 150px;
 }
 
-// discover-workshop section
+// discover-workshop section +++++====+++++======+++++====++++++===
 
 .aside {
   display: flex;
@@ -56,11 +54,18 @@ section.about {
 
 .discover-text {
   text-align: right;
+}
 
+.discover-text .rm-button {
+  float: right;
 }
 
 .workshop-image {
   position: relative;
+}
+
+.discover-workshop p {
+  padding: 30px 0;
 }
 
 

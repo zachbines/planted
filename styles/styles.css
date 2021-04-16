@@ -357,7 +357,7 @@ ul.nav li a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 section.about {
@@ -377,16 +377,6 @@ section.about {
 section.about .about-text {
   width: 80%;
   margin: 20px auto 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 section.about .about-text p {
@@ -394,9 +384,8 @@ section.about .about-text p {
 }
 
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
+  margin: 0 auto;
   width: 200px;
   height: 48px;
   text-decoration: none;
@@ -404,11 +393,13 @@ section.about .about-text p {
   font-weight: 600;
   background: #0e902d;
   line-height: 32px;
+  text-align: center;
   padding: 10px;
 }
 
 .rm-button {
-  width: 140px;
+  margin: 0;
+  width: 150px;
 }
 
 .aside {
@@ -433,8 +424,16 @@ section.about .about-text p {
   text-align: right;
 }
 
+.discover-text .rm-button {
+  float: right;
+}
+
 .workshop-image {
   position: relative;
+}
+
+.discover-workshop p {
+  padding: 30px 0;
 }
 
 .selling-points {
