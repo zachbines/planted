@@ -1,0 +1,43 @@
+// about section - home page
+section.about {
+  background-color: $offWhite;
+  height: 70vh;
+  @include flexCenter();
+
+  .about-text {
+    width: 80%;
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin: 20px 0 30px;
+    }
+  }
+}
+
+// general button styling
+.button {
+  @include flexCenter();
+  // align-items: flex-end;
+  width: 200px;
+  height: 48px;
+  text-decoration: none;
+  color: $offWhite;
+  font-weight: 600;
+  background: $lightGreen;
+  line-height: 32px;
+  padding-top: 5px;
+}
+
+// read more buttons
+.rm-button {
+  width: 160px;
+}
+
+// discover-workshop section
+
+.two-panel {
+  
+}

@@ -11,15 +11,16 @@ p,
   font-family: 'Roboto', sans-serif;
 }
 
+
+.logo {
+    font-size: 4.2rem;
+    letter-spacing: 1px;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+
 header,
 .nav a {
   color: #fff;
-}
-
-.logo {
-  font-size: 4.2rem;
-  letter-spacing: 1px;
-  font-family: 'Josefin Sans', sans-serif; 
 }
 
 .nav a {
@@ -30,13 +31,43 @@ header,
     color: $yellow;
   }
 }
-
+// home-h1 styling
 .home-planted {
   font-size: 16.6rem;
   letter-spacing: 3px;
-  margin-left: 10px;
+
   span {
-      color: $yellow;
+    color: $yellow;
   }
-  // opacity: 0;
 }
+
+// about section - Home Page +++----+++----+++----+++----
+
+// general for all section p
+section p {
+    line-height: 32px;
+}
+
+section.about {
+    color: $black;
+    text-align: center;
+
+    h2 {
+        font-size: 5.63rem;
+        font-weight: 600;  
+        letter-spacing: 1.3px; 
+    }
+}
+
+// discover workshop section typog. +++====+++====+++====+++====+++====+++
+
+.discover-text h3,
+.workshop-text h3 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+
