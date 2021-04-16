@@ -281,7 +281,8 @@ section.about h2 {
 }
 
 .discover-text h3,
-.workshop-text h3 {
+.workshop-text h3,
+.selling-points h4 {
   font-size: 3.2rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -395,12 +396,6 @@ section.about .about-text p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 200px;
   height: 48px;
   text-decoration: none;
@@ -408,61 +403,78 @@ section.about .about-text p {
   font-weight: 600;
   background: #0e902d;
   line-height: 32px;
-  padding-top: 5px;
+  padding: 10px;
 }
 
 .rm-button {
-  width: 160px;
+  width: 140px;
 }
 
-.two-panel {
+.aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.two-panel .aside {
-  padding: 120px 0 40px;
-  width: 45%;
+.aside .quarter {
+  width: 42%;
+}
+
+.discover-text {
   text-align: right;
 }
 
-.two-panel .aside p {
-  margin: 30px 0;
-}
-
-.aside.workshop {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  text-align: left;
-}
-
-.discover-image,
 .workshop-image {
-  width: 140%;
   position: relative;
-}
-
-.discover-image {
-  top: -180px;
-  left: -300px;
-}
-
-.workshop-image {
-  bottom: -80px;
-  right: -50px;
 }
 
 .selling-points {
   background-color: #f0efed;
+  padding: 50px 0;
+}
+
+.selling-points ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.selling-points ul li.selling-point {
+  width: 45%;
+  position: relative;
+}
+
+.selling-point i {
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f8e71c;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.selling-point p {
+  margin: 20px 0 40px;
 }

@@ -24,8 +24,8 @@ section.about {
 
 // general button styling
 .button {
-  @include flexCenter();
-  // align-items: flex-end;
+  display: flex;
+  // display: inline-block;
   width: 200px;
   height: 48px;
   text-decoration: none;
@@ -33,55 +33,75 @@ section.about {
   font-weight: 600;
   background: $lightGreen;
   line-height: 32px;
-  padding-top: 5px;
+  padding: 10px;
 }
 
 // read more buttons
 .rm-button {
-  width: 160px;
+  width: 140px;
 }
 
 // discover-workshop section
 
-
-.two-panel {
+.aside {
   display: flex;
-
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
-  .aside {
-    padding: 120px 0 40px;
-    width: 45%;
-    text-align: right;
-
-    p {
-      margin: 30px 0;
-    }
+  .quarter {
+    width: 42%;
   }
 }
 
-// flipping the right panel so the text is on top
-.aside.workshop {
-  display: flex;
-  flex-direction: column-reverse;
-  text-align: left;
+.discover-text {
+  text-align: right;
+
 }
 
-.discover-image,
 .workshop-image {
-  width: 140%;
   position: relative;
 }
 
-.discover-image {
-  top: -180px;
-  left: -300px;
-}
-.workshop-image {
-  bottom: -80px;
-  right:  -50px;
-}
+
+// .two-panel {
+//   display: flex;
+
+//   justify-content: space-between;
+//   flex-wrap: wrap;
+
+  // .aside {
+  //   padding: 120px 0 40px;
+  //   width: 45%;
+  //   text-align: right;
+
+//     p {
+//       margin: 30px 0;
+//     }
+//   }
+// }
+
+// // flipping the right panel so the text is on top
+// .aside.workshop {
+//   display: flex;
+//   flex-direction: column-reverse;
+//   text-align: left;
+// }
+
+// .discover-image,
+// .workshop-image {
+//   width: 140%;
+//   position: relative;
+// }
+
+// .discover-image {
+//   top: -180px;
+//   left: -300px;
+// }
+// .workshop-image {
+//   bottom: -80px;
+//   right:  -50px;
+// }
 
 
 
@@ -92,4 +112,31 @@ section.about {
 
 .selling-points {
   background-color: $offWhite;
+  padding: 50px 0;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    li.selling-point {
+      width: 45%;
+      position: relative;
+    }
+  }
 }
+
+.selling-point i {
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  @include flexCenter();
+  background-color: $yellow;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.selling-point p {
+  margin: 20px 0 40px;
+}
+
