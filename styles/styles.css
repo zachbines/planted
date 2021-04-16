@@ -354,6 +354,10 @@ ul.nav li a {
   margin-top: 50px;
 }
 
+img {
+  width: 100%;
+}
+
 section.about {
   background-color: #f0efed;
   height: 70vh;
@@ -409,4 +413,56 @@ section.about .about-text p {
 
 .rm-button {
   width: 160px;
+}
+
+.two-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.two-panel .aside {
+  padding: 120px 0 40px;
+  width: 45%;
+  text-align: right;
+}
+
+.two-panel .aside p {
+  margin: 30px 0;
+}
+
+.aside.workshop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  text-align: left;
+}
+
+.discover-image,
+.workshop-image {
+  width: 140%;
+  position: relative;
+}
+
+.discover-image {
+  top: -180px;
+  left: -300px;
+}
+
+.workshop-image {
+  bottom: -80px;
+  right: -50px;
+}
+
+.selling-points {
+  background-color: #f0efed;
 }
