@@ -3,12 +3,14 @@ html {
   body {
     font-family: 'Josefin Sans', sans-serif; 
     font-size: 2rem;
+
   }
 }
 
 p,
 .posts-text li {
   font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -44,8 +46,10 @@ header,
 // about section - Home Page +++----+++----+++----+++----
 
 // general for all section p
-section p {
+section p,
+article p {
     line-height: 32px;
+    
 }
 
 section.about {

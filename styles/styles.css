@@ -265,7 +265,8 @@ header,
   color: #f8e71c;
 }
 
-section p {
+section p,
+article p {
   line-height: 32px;
 }
 
@@ -438,7 +439,7 @@ section.about .about-text p {
 
 .selling-points {
   background-color: #f0efed;
-  padding: 50px 0;
+  padding: 150px 0 30px;
 }
 
 .selling-points ul {
@@ -447,13 +448,15 @@ section.about .about-text p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .selling-points ul li.selling-point {
-  width: 45%;
+  width: 43%;
   position: relative;
+  margin: 15px 0;
 }
 
 .selling-point i {
@@ -476,5 +479,54 @@ section.about .about-text p {
 }
 
 .selling-point p {
-  margin: 20px 0 40px;
+  margin: 18px 0 40px;
+}
+
+.founder-banner {
+  min-height: 100vh;
+  max-height: 1000px;
+  background-image: url("../assets/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.founder-banner .founder-container {
+  background-color: #f0efed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.founder-banner .founder-container .founder-img {
+  width: 30%;
+}
+
+.founder-text {
+  width: 65%;
+  text-align: left;
+}
+
+.founder-text h3 {
+  font-size: 4.2rem;
+  font-weight: 600;
+}
+
+.founder-text p {
+  margin: 25px 0 45px;
+}
+
+.founder-text .fom-button {
+  margin: 0;
 }
