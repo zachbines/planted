@@ -256,6 +256,10 @@ header,
   color: #f8e71c;
 }
 
+footer {
+  color: #fff;
+}
+
 .home-planted {
   font-size: 16.6rem;
   letter-spacing: 3px;
@@ -287,6 +291,11 @@ section.about h2 {
   font-size: 3.2rem;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.founder-text h3 {
+  font-size: 4.2rem;
+  font-weight: 600;
 }
 
 .wrapper {
@@ -332,6 +341,10 @@ ul.nav {
 
 ul.nav li a {
   padding: 10px;
+}
+
+.nav-2 {
+  background-color: black;
 }
 
 .layered-background {
@@ -448,21 +461,23 @@ section.about .about-text p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .selling-points ul li.selling-point {
   width: 43%;
-  position: relative;
   margin: 15px 0;
 }
 
 .selling-point i {
-  position: absolute;
-  top: -10px;
+  position: relative;
+  top: 30px;
   left: -60px;
+  background-color: #f8e71c;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,10 +487,6 @@ section.about .about-text p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f8e71c;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
 }
 
 .selling-point p {
@@ -526,15 +537,49 @@ section.about .about-text p {
   text-align: left;
 }
 
-.founder-text h3 {
-  font-size: 4.2rem;
-  font-weight: 600;
-}
-
 .founder-text p {
   margin: 25px 0 45px;
 }
 
 .founder-text .fom-button {
   margin: 0;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 100px auto;
+}
+
+.gallery ul li {
+  width: calc(33% - 20px);
+  margin: 0 10px;
+}
+
+.gallery ul li:first-child {
+  margin-left: 0px;
+}
+
+.gallery ul li:last-child {
+  margin-right: 0px;
+}
+
+footer {
+  min-height: 50px;
+  background-color: #2c2c2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

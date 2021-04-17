@@ -1,9 +1,10 @@
+// general styles
 html {
   font-size: 62.5%;
+
   body {
     font-family: 'Josefin Sans', sans-serif; 
     font-size: 2rem;
-
   }
 }
 
@@ -12,7 +13,6 @@ p,
   font-family: 'Roboto', sans-serif;
 
 }
-
 
 .logo {
     font-size: 4.2rem;
@@ -29,10 +29,16 @@ header,
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
+
   &:hover {
     color: $yellow;
   }
 }
+
+footer {
+    color: #fff;
+}
+
 // home-h1 styling
 .home-planted {
   font-size: 16.6rem;
@@ -49,7 +55,7 @@ header,
 section p,
 article p {
     line-height: 32px;
-    
+
 }
 
 section.about {
@@ -75,7 +81,10 @@ section.about {
 
 
 
-// selling-points section typog +++====++++=====+++======++++=
+.founder-text h3 {
+  font-size: 4.2rem;
+  font-weight: 600;
+}
 
 
 

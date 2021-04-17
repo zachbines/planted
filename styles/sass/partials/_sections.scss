@@ -123,25 +123,25 @@ section.about {
     ul {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
 
         li.selling-point {
             width: 43%;
-            position: relative;
+            // position: relative;
             margin: 15px 0;
         }
     }
 }
 
 .selling-point i {
-    position: absolute;
-    top: -10px;
+    position: relative;
+    top: 30px;
     left: -60px;
-    @include flexCenter();
     background-color: $yellow;
     width: 45px;
     height: 45px;
     border-radius: 50%;
+    @include flexCenter();
 }
 
 .selling-point p {
@@ -180,12 +180,6 @@ section.about {
 .founder-text {
     width: 65%;
     text-align: left;
-
-    h3 {
-        font-size: 4.2rem;
-        font-weight: 600;
-    }
-    
 }
 
 .founder-text p {
@@ -194,4 +188,35 @@ section.about {
 
 .founder-text .fom-button {
     margin: 0;
+}
+
+// gallery section ++++++========++++++++========++++++++++=========++++++++
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px auto;
+
+    li {
+        width: calc(33% - 20px);
+        // min-width: 300px;
+        margin: 0 10px;
+        &:first-child {
+            margin-left: 0px;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+    } 
+}
+
+// footers +++=======++++++++++========++++++++++==========+++++++=
+
+footer {
+    min-height: 50px;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
