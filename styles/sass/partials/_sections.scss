@@ -1,22 +1,22 @@
 // about section - home page +++++======++++++======+++++++
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 
 section.about {
-  background-color: $offWhite;
-  height: 70vh;
-  @include flexCenter();
+    background-color: $offWhite;
+    height: 70vh;
+    @include flexCenter();
 
-  .about-text {
-    width: 80%;
-    margin: 20px auto 0;
-    p {
-      margin: 20px 0 30px;
+    .about-text {
+        width: 80%;
+        margin: 20px auto 0;
+        p {
+        margin: 20px 0 30px;
+        }
     }
-  }
 }
 
 // general button styling
@@ -117,58 +117,64 @@ section.about {
 //selling-points section +++====+++====+++====+++====++====+++====
 
 .selling-points {
-  background-color: $offWhite;
-  padding: 150px 0 30px;
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    
-    li.selling-point {
-      width: 43%;
-      position: relative;
-      margin: 15px 0;
+    background-color: $offWhite;
+    padding: 150px 0 30px;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        li.selling-point {
+            width: 43%;
+            position: relative;
+            margin: 15px 0;
+        }
     }
-  }
 }
 
 .selling-point i {
-  position: absolute;
-  top: -10px;
-  left: -60px;
-  @include flexCenter();
-  background-color: $yellow;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: -60px;
+    @include flexCenter();
+    background-color: $yellow;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
 
 .selling-point p {
-  margin: 18px 0 40px;
+    margin: 18px 0 40px;
 }
 
 // founder section ++++++========+++++++++=========+++++++++
 
 .founder-banner {
-  min-height: 100vh;
-  max-height: 1000px;
-  background-image: url('../assets/banner-image.jpg');
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: 100%;
-  display: flex;
-  align-items: flex-end;
+    min-height: 50vh;
+    background-image: url('../assets/banner-image.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    // background-attachment: fixed; 
+}
+.founder {
+    background-color: $offWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 
-  .founder-container {
-      background-color: $offWhite;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+    .founder-container { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 5%;
+        padding: 100px 0 10px;
 
-      .founder-img {
-          width: 30%;
-      }
-  }
+        .founder-img {
+            width: 30%;
+        }
+    }
 }
 
 .founder-text {
