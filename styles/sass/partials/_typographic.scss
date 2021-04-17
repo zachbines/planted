@@ -2,7 +2,11 @@
 html {
   font-size: 62.5%;
 
-  body {
+  body,
+  input,
+  label,
+  textarea,
+  button {
     font-family: 'Josefin Sans', sans-serif; 
     font-size: 2rem;
   }
@@ -11,8 +15,6 @@ html {
 p,
 .about-posts-text li {
   font-family: 'Roboto', sans-serif;
-
-
 }
 
 .logo {
@@ -26,7 +28,8 @@ a {
 }
 
 header,
-.nav a {
+.nav a,
+button {
   color: #fff;
 }
 
@@ -100,19 +103,13 @@ section.about {
   font-weight: 600;
 }
 
-
-
 // blog section ++++======+++++++======+++
 
-
-
-.about-posts-text h3 {
-  font-size: 3.2rem;
+.about-posts-text h3,
+.comment-text p:first-child {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
   font-weight: 600;
-
-  &:last-of-type {
-    margin-top: 60px;
-  }
 }
 
 .about-posts-text ul {
@@ -128,4 +125,16 @@ section.about {
   font-size: 4.3rem;
 }
 
+.comments h3 {
+  font-size: 3.8rem;
+  font-weight: 600;
+}
 
+
+// form typog styling +++++======+++++++=======
+
+input[type='text'],
+label {
+  font-weight: 300;
+  line-height: 25px;
+}

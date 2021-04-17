@@ -221,11 +221,29 @@ textarea {
   overflow: hidden;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   font-size: 62.5%;
 }
 
-html body {
+html body,
+html input,
+html label,
+html textarea,
+html button {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2rem;
 }
@@ -246,7 +264,8 @@ a {
 }
 
 header,
-.nav a {
+.nav a,
+button {
   color: #fff;
 }
 
@@ -313,13 +332,11 @@ section.about h2 {
   font-weight: 600;
 }
 
-.about-posts-text h3 {
-  font-size: 3.2rem;
+.about-posts-text h3,
+.comment-text p:first-child {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3rem;
   font-weight: 600;
-}
-
-.about-posts-text h3:last-of-type {
-  margin-top: 60px;
 }
 
 .about-posts-text ul {
@@ -333,6 +350,17 @@ section.about h2 {
 
 .mission-text h2 {
   font-size: 4.3rem;
+}
+
+.comments h3 {
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+input[type='text'],
+label {
+  font-weight: 300;
+  line-height: 25px;
 }
 
 .wrapper {
@@ -475,18 +503,22 @@ section.about .about-text p {
   margin: 20px 0 30px;
 }
 
+.button,
+button {
+  border: 0;
+  line-height: 32px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background: #0e902d;
+  padding: 10px;
+}
+
 .button {
   display: block;
   margin: 0 auto;
   width: 200px;
   height: 48px;
-  text-decoration: none;
-  color: #f0efed;
-  font-weight: 600;
-  background: #0e902d;
-  line-height: 32px;
-  text-align: center;
-  padding: 10px;
 }
 
 .rm-button {
@@ -494,14 +526,17 @@ section.about .about-text p {
   width: 150px;
 }
 
-.blog-con-main {
-  background-color: #f0efed;
+.blog-con {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.blog-main {
+  background-color: #f0efed;
 }
 
 .aside {
@@ -769,7 +804,6 @@ footer {
 
 .about-image {
   display: inline-block;
-  left: none;
 }
 
 .mission-comments-form {
@@ -784,7 +818,7 @@ footer {
 .mission-image {
   display: inline-block;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   right: -15px;
 }
 
@@ -803,7 +837,7 @@ footer {
 
 .mission-text {
   width: 80%;
-  padding: 60px 50px;
+  padding: 60px 20px 60px 50px;
   border-left: 5px solid #f8e71c;
   border-bottom: 5px solid #f8e71c;
 }
@@ -812,7 +846,111 @@ footer {
   padding: 15px 0;
 }
 
+.comments h3 {
+  margin-top: -180px;
+  margin-bottom: 30px;
+}
+
 .comments {
-  width: 80%;
+  width: 85%;
   padding: 0 50px;
+}
+
+.comments li {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.comments li .comment-text {
+  width: 85%;
+  padding-left: 10px;
+}
+
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+}
+
+fieldset .name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0 20px;
+}
+
+fieldset .name-email .user {
+  -ms-flex-preferred-size: 46%;
+      flex-basis: 46%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label {
+  padding-left: 30px;
+}
+
+input[type='text'] {
+  min-width: 200px;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #0e902d;
+}
+
+textarea {
+  background-color: transparent;
+  border: 0;
+  border: 2px solid #0e902d;
+  resize: none;
+  padding: 40px;
+  margin: 10px 0;
+  max-height: 25vh;
+}
+
+button {
+  padding: 12px 0 8px;
+  margin: 30px 0;
+}
+
+.con-main {
+  background-color: #f0efed;
+}
+
+.con-main .blog-con {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }

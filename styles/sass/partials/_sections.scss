@@ -4,7 +4,6 @@ img {
     max-width: 100%;
 }
 
-
 section.about {
     background-color: $offWhite;
     height: 70vh;
@@ -20,18 +19,22 @@ section.about {
 }
 
 // general button styling
+.button, 
+button {
+    border: 0;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background: $lightGreen;
+    padding: 10px;
+}
+
 .button {
   display: block;
   margin: 0 auto;
   width: 200px;
   height: 48px;
-  text-decoration: none;
-  color: $offWhite;
-  font-weight: 600;
-  background: $lightGreen;
-  line-height: 32px;
-  text-align: center;
-  padding: 10px;
 }
 
 // read more buttons
@@ -42,13 +45,15 @@ section.about {
 
 //general styles for blog and contact pages ++++=======++++++=======+++++++
 
-.blog-con-main {
-    background-color: $offWhite;
+.blog-con {
     display: flex;
     justify-content: space-between;
 }
 
 // discover-workshop section +++++====+++++======+++++====++++++===
+.blog-main {
+    background-color: $offWhite;
+}
 
 .aside {
   display: flex;
@@ -183,6 +188,7 @@ section.about {
     background-size: cover;
     // background-attachment: fixed; 
 }
+
 .founder {
     background-color: $offWhite;
     display: flex;

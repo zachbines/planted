@@ -34,47 +34,57 @@
         </div>
     </header>
 
-    <main class="blog-con-main con-main">
-        <aside>
-            <ul>
-                <li>
-                    <i class="fab fa-facebook-f"></i>
-                </li>
-                <li>
-                    <i class="fab fa-instagram"></i>
-                </li>
-                <li>
-                    <i class="fab fa-twitter"></i>
-                </li>
-                <li>
-                    <i class="fab fa-whatsapp"></i>
-                </li>
-            </ul>
-            <a href="#">info@email.com</a>
-            <p class="address">
-                <span>123-456-7890</span>
-                <span>123 Queen St. West, Unit 10</span>
-                <span>Toronto, Ontario</span>
-                <span>M5V2D5</span>
-            </p>
-        </aside>
-        <form action="POST">
-            <fieldset>
-                <!-- flex name-email row -->
-                <div class="name-email">
-                    <label for="user-name" class="visuallyHidden">Name</label>
-                    <input type="text" id="user-name" placeholder="Name">
+    <main class="con-main">
+        <div class="wrapper blog-con">
+            <aside class="contact-info">
+                <ul class="socials">
+                    <li>
+                        <p class="sr-only">facebook</p>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <p class="sr-only">Instagram</p>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <p class="sr-only">Twitter</p>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <p class="sr-only">Whatsapp</p>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                <a href="#">info@email.com</a>
+                <p class="address">
+                    <span>123-456-7890</span>
+                    <span>123 Queen St. West, Unit 10</span>
+                    <span>Toronto, Ontario</span>
+                    <span>M5V2D5</span>
+                </p>
+            </aside>
+            <form action="">
+                <!-- flex fieldset column -->
+                <fieldset>
+                    <!-- flex name-email row -->
+                    <div class="name-email">
+                        <div class="name user">
+                            <label for="user-name">Name</label>
+                            <input type="text" id="user-name">
+                        </div>
+                        <div class="email user">
+                            <label for="user-email">Email address</label>
+                            <input type="text" id="user-name">
+                        </div>
+                    </div>
             
-                    <label for="user-email" class="visuallyHidden">Email address</label>
-                    <input type="text" id="user-name" placeholder="Email address">
-                </div>
+                    <label for="comment" class="visuallyHidden">Comments</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
             
-                <label for="comment" class="visuallyHidden">Comments</label>
-                <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Comment"></textarea>
-            
-                <button type="submit">Submit</button>
-            </fieldset>
-        </form>
+                    <button type="submit">Post Comment</button>
+                </fieldset>
+            </form>
+        </div>
     </main>
     <footer>
         <p>Copyright © 2018 Juno</p>
