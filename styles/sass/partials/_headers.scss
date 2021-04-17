@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 1350px;
+  max-width: 1250px;
   width: 90%;
   margin: 0 auto;
 }
@@ -16,11 +16,13 @@
 
 // put contact/blog header here (cause they are styled a lil differently
 
-.home-header nav {
+.home-header nav,
+.nav-container {
   display: flex;
   justify-content: space-between;
   padding: 25px 0;  
   width: 53%;
+  min-width: 500px;
 }
 
 ul.nav {
@@ -36,10 +38,15 @@ ul.nav {
   }
 }
 
-.nav-2 {
-  background-color: black;
+.logo {
+  margin-right: 10px;
 }
-//also .blog-contact-nav to add background color
+
+// blog/contact nav starts here ++++====+++++++======+++++++
+
+.nav-2 {
+  background-color: #000;
+}
 
 .layered-background {
   width: 100%;
@@ -50,14 +57,47 @@ ul.nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
-  h1.home-planted {
+  .home-planted-container {
     width: 40%;
-    margin-left: 10px;
-    margin-top: 50px;
-}
+    padding: 0 2opx;
 
+    h1 {
+      width: 100%;
+    
+      // margin-left: 10px;
+      margin: 50px auto 0;
+    }
+  }
 }
   
+// Blog and Contact header ++++=======+++++++======++++++++======
 
+.header-2 {
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+
+  h1 {
+    margin-bottom: 50px;
+    width: 240px;
+    
+  }
+}
+
+.blog-header {
+  background-image: url('../assets/blog-header-1.jpg');
+
+  h1 {
+    margin-bottom: 125px;
+  }
+}
+
+.con-header {
+  background-image: url('../assets/contact-header-1.jpg');
+  background-position: bottom;
+}
 
