@@ -3,3 +3,16 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin yellowShadow($height, $top, $left: none, $right: none) {
+  content: '';
+  display: block;
+  background-color: $yellow;
+  width: 100%;
+  height: $height;
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  z-index: -1;
+}
