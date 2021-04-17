@@ -313,14 +313,9 @@ section.about h2 {
   font-weight: 600;
 }
 
-.about-posts-text p {
-  padding-left: 2px;
-}
-
 .about-posts-text h3 {
   font-size: 3.2rem;
   font-weight: 600;
-  margin: 10px 0;
 }
 
 .about-posts-text h3:last-of-type {
@@ -424,7 +419,7 @@ ul.nav li a {
 }
 
 .header-2 {
-  min-height: 50vh;
+  min-height: 55vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -764,6 +759,14 @@ footer {
   margin-right: 20px;
 }
 
+.blog-main aside .about-posts-text h3 {
+  margin: 10px 0;
+}
+
+.about-posts-text p {
+  padding-left: 2px;
+}
+
 .about-image {
   display: inline-block;
   left: none;
@@ -810,6 +813,6 @@ footer {
 }
 
 .comments {
-  width: 60%;
-  clear: both;
+  width: 80%;
+  padding: 0 50px;
 }

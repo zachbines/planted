@@ -1,26 +1,33 @@
 // starting from blog - main ++++++=========+++++++++==========
 
-.blog-main {
 
-    aside {
+
+.blog-main aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30%;
+    padding: 100px 0;
+    // z-index: 1;
+    
+    .about-posts-text {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
-        width: 30%;
-        padding: 100px 0;
-        // z-index: 1;
-        
-        .about-posts-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            height: 900px;
-            background-color: #fff;
-            width: 60%;
-            padding: 20px;
-            margin-right: 20px;
+        justify-content: end;
+        height: 900px;
+        background-color: #fff;
+        width: 60%;
+        padding: 20px;
+        margin-right: 20px;
+
+        h3 {
+            margin: 10px 0;
         }
     }
+}
+
+.about-posts-text p {
+  padding-left: 2px;
 }
 
 .about-image {
@@ -76,9 +83,8 @@
 }
 
 .comments {
-    width: 60%;
-    clear: both;
-
+    width: 80%; 
+    padding: 0 50px;
 }
 
 

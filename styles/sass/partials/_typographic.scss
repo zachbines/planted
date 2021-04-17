@@ -12,6 +12,7 @@ p,
 .about-posts-text li {
   font-family: 'Roboto', sans-serif;
 
+
 }
 
 .logo {
@@ -103,14 +104,11 @@ section.about {
 
 // blog section ++++======+++++++======+++
 
-.about-posts-text p {
-  padding-left: 2px;
-}
+
 
 .about-posts-text h3 {
   font-size: 3.2rem;
   font-weight: 600;
-  margin: 10px 0;
 
   &:last-of-type {
     margin-top: 60px;
