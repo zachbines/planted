@@ -9,7 +9,7 @@ html {
 }
 
 p,
-.posts-text li {
+.about-posts-text li {
   font-family: 'Roboto', sans-serif;
 
 }
@@ -20,13 +20,16 @@ p,
     font-family: 'Josefin Sans', sans-serif; 
 }
 
+a {
+  text-decoration: none;
+}
+
 header,
 .nav a {
   color: #fff;
 }
 
 .nav a {
-  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 1px;
 
@@ -64,7 +67,8 @@ footer {
 
 // general for all section p
 section p,
-article p {
+article p,
+aside p {
     line-height: 32px;
 
 }
@@ -90,8 +94,6 @@ section.about {
     letter-spacing: 1px;
 }
 
-
-
 .founder-text h3 {
   font-size: 4.2rem;
   font-weight: 600;
@@ -99,4 +101,27 @@ section.about {
 
 
 
+// blog section ++++======+++++++======+++
 
+.about-posts-text p {
+  padding-left: 2px;
+}
+
+.about-posts-text h3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin: 10px 0;
+
+  &:last-of-type {
+    margin-top: 60px;
+  }
+}
+
+.about-posts-text ul {
+  list-style: initial;
+  margin: 25px;
+
+  li {
+    line-height: 32px; 
+  }
+}

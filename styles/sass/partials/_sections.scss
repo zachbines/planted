@@ -14,7 +14,7 @@ section.about {
         width: 80%;
         margin: 20px auto 0;
         p {
-        margin: 20px 0 30px;
+            margin: 20px 0 30px;
         }
     }
 }
@@ -38,6 +38,14 @@ section.about {
 .rm-button {
   margin: 0;
   width: 150px;
+}
+
+//general styles for blog and contact pages ++++=======++++++=======+++++++
+
+.blog-con-main {
+    background-color: $offWhite;
+    display: flex;
+    justify-content: space-between;
 }
 
 // discover-workshop section +++++====+++++======+++++====++++++===
@@ -219,4 +227,5 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    clear: both
 }
