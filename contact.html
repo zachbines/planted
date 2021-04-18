@@ -55,7 +55,7 @@
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </li>
                 </ul>
-                <a href="#">info@email.com</a>
+                <a href="#" class="contact-email">info@email.com</a>
                 <p class="address">
                     <span>123-456-7890</span>
                     <span>123 Queen St. West, Unit 10</span>
@@ -65,24 +65,26 @@
             </aside>
             <form action="">
                 <!-- flex fieldset column -->
-                <fieldset>
-                    <!-- flex name-email row -->
-                    <div class="name-email">
-                        <div class="name user">
-                            <label for="user-name">Name</label>
-                            <input type="text" id="user-name">
+                <div class="fieldset-container">
+                    <fieldset>
+                        <!-- flex name-email row -->
+                        <div class="name-email">
+                            <div class="name user">
+                                <label for="user-name">Name</label>
+                                <input type="text" id="user-name">
+                            </div>
+                            <div class="email user">
+                                <label for="user-email">Email address</label>
+                                <input type="text" id="user-name">
+                            </div>
                         </div>
-                        <div class="email user">
-                            <label for="user-email">Email address</label>
-                            <input type="text" id="user-name">
-                        </div>
-                    </div>
-            
-                    <label for="comment" class="visuallyHidden">Comments</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-            
-                    <button type="submit">Post Comment</button>
+                
+                        <label for="message" class="visuallyHidden">Comments</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                
+                        <button type="submit">Post Comment</button>
                 </fieldset>
+                </div>
             </form>
         </div>
     </main>

@@ -124,19 +124,18 @@ input[type='text'] {
 }
 
 textarea {
-    
     background-color: transparent;
     border: 0;
     border: 2px solid $lightGreen;
     resize: none;
-    padding: 40px;
+    padding: 50px 30px;
     margin: 10px 0;
-    max-height: 25vh;
+    max-height: 30vh;
 }
 
 button {
     padding: 12px 0 8px;
-    margin: 30px 0;
+    margin: 40px 0;
 }
 
 
