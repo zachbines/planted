@@ -51,22 +51,19 @@ button {
 }
 
 // discover-workshop section +++++====+++++======+++++====++++++===
-.blog-main {
-    background-color: $offWhite;
-}
 
 .aside {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   
-  .quarter {
+  .half {
     width: 45%;
 
     .mini-wrapper {
         width: 70%;
-        min-width: 500px;
-
+        min-width: 400px;
+        padding: 20px 0;
     }
   }
 }
@@ -123,7 +120,6 @@ button {
 }
 
 .discover-workshop img {
-    // object-fit: cover;
     width: 150%;
 }
 
@@ -191,7 +187,6 @@ button {
         padding: 100px 0 10px;
 
         .founder-img {
-            // width: 26%;
             margin-right: 30px;
             display: inline-block;
             position: relative;
