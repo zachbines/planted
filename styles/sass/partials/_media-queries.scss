@@ -36,10 +36,55 @@
 
 @media (max-width: 920px) {
 
+    // homepage 
+    .layered-background {
+        background-position: center bottom;
 
+        .home-planted-container {
+            width: 100%;
+            padding: 0 10px;
 
+            h1 {
+                text-align: left;
+                padding-left: 20px;
+            }
+
+        }
+    }
+
+    .aside {
+        flex-direction: column;
+        align-items: center;
+
+        .half {
+            width: 80%;
+
+            .left {
+                margin: 70px 0 30px;
+            }
+        }
+     }   
     // contact page 
+    .con {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .contact-form {
+        margin: 0;
+        width: 90%;
+
+        .fieldset-container {
+            top: -50px;
+            right: 0;
+            
+            .shadow-box-form {
+                padding: 20px 60px;
+                margin-bottom: 0;
+            } 
+        }
+    } 
+
     
 }
-
 // at 600px there is white space on the right because of the nav

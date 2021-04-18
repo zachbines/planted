@@ -1077,7 +1077,7 @@ button {
   background-color: #f0efed;
 }
 
-.con-main .blog-con {
+.con-main .con {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1085,6 +1085,7 @@ button {
 
 .contact-info {
   width: 25%;
+  margin: 50px 0;
 }
 
 .socials {
@@ -1171,5 +1172,55 @@ button {
     margin: 0;
     width: 100%;
     margin-bottom: -100px;
+  }
+}
+
+@media (max-width: 920px) {
+  .layered-background {
+    background-position: center bottom;
+  }
+  .layered-background .home-planted-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .layered-background .home-planted-container h1 {
+    text-align: left;
+    padding-left: 20px;
+  }
+  .aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aside .half {
+    width: 80%;
+  }
+  .aside .half .left {
+    margin: 70px 0 30px;
+  }
+  .con {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact-form {
+    margin: 0;
+    width: 90%;
+  }
+  .contact-form .fieldset-container {
+    top: -50px;
+    right: 0;
+  }
+  .contact-form .fieldset-container .shadow-box-form {
+    padding: 20px 60px;
+    margin-bottom: 0;
   }
 }
