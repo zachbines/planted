@@ -11,7 +11,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  z-index: 10;
 }
 
 // put contact/blog header here (cause they are styled a lil differently
@@ -61,12 +60,10 @@ ul.nav {
 
   .home-planted-container {
     width: 40%;
-    padding: 0 2opx;
+    padding: 0 20px;
 
     h1 {
-      width: 100%;
-    
-      // margin-left: 10px;
+      text-align: left;
       margin: 50px auto 0;
     }
   }
@@ -84,6 +81,7 @@ ul.nav {
   h1 {
     margin-bottom: 50px;
     width: 240px;
+    margin-right: 20px;
   }
 }
 

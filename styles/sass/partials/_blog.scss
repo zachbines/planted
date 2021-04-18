@@ -1,45 +1,51 @@
-// starting from blog - main ++++++=========+++++++++==========
-.blog-main {
-    background-color: $offWhite;
+
+//general styles for blog and contact pages ++++=======++++++=======+++++++
+
+.blog-con {
+    display: flex;
+    justify-content: space-between;
 }
 
-.blog-main aside {
+// starting from blog - main ++++++=========+++++++++==========
+
+.blog-main {
+    background-color: $offWhite;
+    justify-content: flex-end;
+}
+
+.about-posts {
+    background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 27%;
-    padding: 100px 0;
-    position: relative;
-    // z-index: 1;
-    
-    .about-posts-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        min-width:  330px;
-        height: 900px;
-        background-color: #fff;
-        width: 60%;
-        padding: 20px;
-        margin-top: 40px;
-        align-self: flex-end;
+    flex-basis: 600px;
+    justify-content: flex-start;
+    width: calc(100% / 3);
+    max-width: 430px;
+    height: 100%;
+    margin: 100px 50px;
 
-        h3 {
-            margin: 10px 0;
-        }
+    h3 {
+        margin: 30px 0 10px;
     }
+}
+
+.about-posts-text {
+    padding: 25px;
 }
 
 .about-posts-text p {
   padding-left: 2px;
+  padding-bottom: 20px;
 }
 
 .about-image {
-    display: inline-block;
-    position: absolute;
-    top: 120px;
-    left: -10px;
-    z-index: 10;
+    width: 150%;
+    // display: inline-block;
+    position: relative;
+    top: -20px;
+    right: 100px;
+    // z-index: 10;
+    // opacity: 0;
 }
 
 // mission statement section ++++=====+++++++=====+++++++=====
@@ -48,24 +54,27 @@
     width: 62%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: flex-end;
 }
 
 .mission {
     position: relative;
-    top: -250px;
+    top: -230px;
     right: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    border-left: 5px solid $yellow;
+    width: 90%;
 }
 
 .mission-image {
+    // width: 100%;
     display: inline-block;
     position: relative;
     z-index: 1;
-    right: -15px;
+    top: -15px;
+    right: -10px;
 
     &::after {
         @include yellowShadow(100%, 15px, -13px);
@@ -74,10 +83,8 @@
 
 .mission-text {
     width: 80%; 
-    padding: 60px 20px 60px 50px;
-    border-left: 5px solid $yellow;
+    padding: 60px 20px 25px 60px;
     border-bottom: 5px solid $yellow;
-    
     p {
         padding: 15px 0;
         &:first-of-type {

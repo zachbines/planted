@@ -294,7 +294,7 @@ footer {
 }
 
 .home-planted {
-  font-size: 16.6rem;
+  font-size: calc(11rem + 3vw);
   letter-spacing: 3px;
 }
 
@@ -339,9 +339,15 @@ section.about h2 {
   font-weight: 600;
 }
 
+.about-posts-text span a {
+  font-style: italic;
+  font-weight: 600;
+  color: #074115;
+}
+
 .about-posts-text ul {
   list-style: initial;
-  margin: 25px;
+  margin: 20px 25px;
 }
 
 .about-posts-text ul li {
@@ -412,7 +418,6 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  z-index: 10;
 }
 
 .home-header nav,
@@ -474,11 +479,11 @@ ul.nav li a {
 
 .layered-background .home-planted-container {
   width: 40%;
-  padding: 0 2opx;
+  padding: 0 20px;
 }
 
 .layered-background .home-planted-container h1 {
-  width: 100%;
+  text-align: left;
   margin: 50px auto 0;
 }
 
@@ -497,6 +502,7 @@ ul.nav li a {
 .header-2 h1 {
   margin-bottom: 50px;
   width: 240px;
+  margin-right: 20px;
 }
 
 .blog-header {
@@ -562,15 +568,6 @@ button {
   width: 150px;
 }
 
-.blog-con {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .aside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -589,10 +586,14 @@ button {
 .aside .half .mini-wrapper {
   width: 70%;
   min-width: 400px;
-  padding: 20px 0;
+  padding: 20px 0px 15px;
 }
 
 .discover {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -606,7 +607,6 @@ button {
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  margin-right: -10px;
 }
 
 .discover .discover-text .rm-button {
@@ -619,11 +619,8 @@ button {
           align-items: flex-end;
 }
 
-.workshop .right {
-  margin-bottom: 18px;
-}
-
-.workshop-image {
+.workshop .workshop-image {
+  min-width: 480px;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -631,7 +628,7 @@ button {
   left: -15px;
 }
 
-.workshop-image::after {
+.workshop .workshop-image::after {
   content: '';
   display: block;
   background-color: #f8e71c;
@@ -645,6 +642,7 @@ button {
 }
 
 .discover-image {
+  min-width: 480px;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -746,20 +744,18 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 5%;
-  padding: 100px 0 10px;
+  padding: 100px 0 100px;
 }
 
 .founder .founder-container .founder-img {
-  margin-right: 30px;
+  margin-bottom: 40px;
+  margin-right: 40px;
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -779,7 +775,8 @@ button {
 }
 
 .founder-text {
-  width: 65%;
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
   text-align: left;
 }
 
@@ -831,61 +828,60 @@ footer {
   clear: both;
 }
 
+.blog-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .blog-main {
   background-color: #f0efed;
-}
-
-.blog-main aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 27%;
-  padding: 100px 0;
-  position: relative;
-}
-
-.blog-main aside .about-posts-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
-  min-width: 330px;
-  height: 900px;
-  background-color: #fff;
-  width: 60%;
-  padding: 20px;
-  margin-top: 40px;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+          justify-content: flex-end;
 }
 
-.blog-main aside .about-posts-text h3 {
-  margin: 10px 0;
+.about-posts {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 600px;
+      flex-basis: 600px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: calc(100% / 3);
+  max-width: 430px;
+  height: 100%;
+  margin: 100px 50px;
+}
+
+.about-posts h3 {
+  margin: 30px 0 10px;
+}
+
+.about-posts-text {
+  padding: 25px;
 }
 
 .about-posts-text p {
   padding-left: 2px;
+  padding-bottom: 20px;
 }
 
 .about-image {
-  display: inline-block;
-  position: absolute;
-  top: 120px;
-  left: -10px;
-  z-index: 10;
+  width: 150%;
+  position: relative;
+  top: -20px;
+  right: 100px;
 }
 
 .mission-comments-form {
@@ -897,14 +893,14 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .mission {
   position: relative;
-  top: -250px;
+  top: -230px;
   right: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,16 +909,19 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-left: 5px solid #f8e71c;
+  width: 90%;
 }
 
 .mission-image {
   display: inline-block;
   position: relative;
   z-index: 1;
-  right: -15px;
+  top: -15px;
+  right: -10px;
 }
 
 .mission-image::after {
@@ -940,8 +939,7 @@ footer {
 
 .mission-text {
   width: 80%;
-  padding: 60px 20px 60px 50px;
-  border-left: 5px solid #f8e71c;
+  padding: 60px 20px 25px 60px;
   border-bottom: 5px solid #f8e71c;
 }
 

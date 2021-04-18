@@ -43,13 +43,6 @@ button {
   width: 150px;
 }
 
-//general styles for blog and contact pages ++++=======++++++=======+++++++
-
-.blog-con {
-    display: flex;
-    justify-content: space-between;
-}
-
 // discover-workshop section +++++====+++++======+++++====++++++===
 
 .aside {
@@ -63,19 +56,20 @@ button {
     .mini-wrapper {
         width: 70%;
         min-width: 400px;
-        padding: 20px 0;
+        padding: 20px 0px 15px;
+        // margin: 0 20px;
     }
   }
 }
 
 .discover {
+    flex-direction: row-reverse;
     align-items: center;
 
     .discover-text {
         text-align: right;
         display: flex;
         justify-content: right;
-        margin-right: -10px;
 
         .rm-button {
          float: right;
@@ -86,24 +80,23 @@ button {
 .workshop  {
     align-items: flex-end;
 
-    .right {
-        margin-bottom: 18px;
+    .workshop-image {
+        min-width: 480px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: -30px;
+        left: -15px;
+    
+        &::after {
+            @include yellowShadow(98%, 25px, none, -18px);
+        }
     }
 }
 
 
-.workshop-image {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    top: -30px;
-    left: -15px;
-
-    &::after {
-        @include yellowShadow(98%, 25px, none, -18px);
-    }
-}
 .discover-image {
+    min-width: 480px;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -180,14 +173,14 @@ button {
 
     .founder-container { 
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 5%;
-        padding: 100px 0 10px;
+        padding: 100px 0 100px;
 
         .founder-img {
-            margin-right: 30px;
+            margin-bottom: 40px;
+            margin-right: 40px;
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -200,19 +193,10 @@ button {
     }
 }
 
-// .founder-img img {
-    
-//     // box-shadow: 20px 20px $yellow;
-// }
-
-// .founder-img img::after {
-    
-// }
-
 .founder-text {
-    // margin: 20px 0;
-    width: 65%;
+    flex-basis: 65%;
     text-align: left;
+    // margin: 0 auto;
 }
 
 .founder-text p {
