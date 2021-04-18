@@ -40,12 +40,10 @@
 
 .about-image {
     width: 150%;
-    // display: inline-block;
+    display: inline-block;
     position: relative;
     top: -20px;
     right: 100px;
-    // z-index: 10;
-    // opacity: 0;
 }
 
 // mission statement section ++++=====+++++++=====+++++++=====
@@ -59,7 +57,6 @@
     position: relative;
     top: -230px;
     right: 15px;
-    flex-wrap: wrap;
 }
 
 .mission {
@@ -84,7 +81,7 @@
 }
 
 .mission-text {
-    width: 80%; 
+    width: 90%; 
     padding: 60px 20px 25px 60px;
     border-bottom: 5px solid $yellow;
     p {
@@ -109,13 +106,12 @@
         padding: 40px 0;
         display: flex;
         align-items: flex-start;
-        justify-content: start;
+        justify-content: flex-start;
         flex-wrap: wrap;
-        align-content: space-between;
 
         .comment-text {
             flex-basis: 80%;
-            padding: 0 60px 0 0;
+            padding: 0 0px 0 0;
         }
     }
 }
@@ -129,7 +125,7 @@
 }
 
 .blog-form {
-    width: 89%;
+    width: 100%;
     margin-bottom: -220px;
 }
 
