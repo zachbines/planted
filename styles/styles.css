@@ -366,12 +366,16 @@ section.about h2 {
 }
 
 .mission-text p time span {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .comments h3 {
   font-size: 3.8rem;
   font-weight: 600;
+}
+
+.comment-text p:first-child {
+  color: #074115;
 }
 
 input[type='text'],
@@ -885,7 +889,7 @@ footer {
 }
 
 .mission-comments-form {
-  width: 62%;
+  width: 66%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -893,15 +897,20 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.mission {
+          align-items: end;
   position: relative;
   top: -230px;
   right: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.mission {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -955,14 +964,13 @@ footer {
   padding: 15px 0 0;
 }
 
-.comments h3 {
-  margin-top: -180px;
-  margin-bottom: 30px;
-}
-
 .comments {
-  width: 85%;
-  padding: 0 50px;
+  width: 80%;
+  margin-top: 70px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-left: 65px;
 }
 
 .comments li {
@@ -973,14 +981,34 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 .comments li .comment-text {
-  width: 85%;
-  padding-left: 10px;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  padding: 0 60px 0 0;
+}
+
+.comments img {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  margin: 0 30px 20px 0;
+}
+
+.comments h3 {
+  margin-bottom: 30px;
+}
+
+.blog-form {
+  width: 89%;
+  margin-bottom: -220px;
 }
 
 fieldset {
@@ -1026,8 +1054,8 @@ label {
 }
 
 input[type='text'] {
-  min-width: 200px;
   width: 100%;
+  min-width: 200px;
   background: transparent;
   border: 0;
   border-bottom: 2px solid #0e902d;

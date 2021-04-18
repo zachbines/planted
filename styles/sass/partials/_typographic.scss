@@ -139,13 +139,17 @@ section.about {
     color: $darkGreen;
     
     span {
-      font-weight: bold;
+      font-weight: 600;
     }
 }
 
 .comments h3 {
   font-size: 3.8rem;
   font-weight: 600;
+}
+
+.comment-text p:first-child {
+  color: $darkGreen;
 }
 
 
