@@ -573,27 +573,54 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.aside .quarter {
+  width: 45%;
+}
+
+.aside .quarter .mini-wrapper {
+  width: 70%;
+  min-width: 500px;
+}
+
+.discover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.aside .quarter {
-  width: 42%;
-}
-
-.discover-text {
+.discover .discover-text {
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-right: -10px;
 }
 
-.discover-text .rm-button {
+.discover .discover-text .rm-button {
   float: right;
+}
+
+.workshop {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.workshop .right {
+  margin-bottom: 18px;
 }
 
 .workshop-image {
   display: inline-block;
   position: relative;
   z-index: 1;
+  top: -30px;
+  left: -15px;
 }
 
 .workshop-image::after {
@@ -603,9 +630,9 @@ button {
   width: 100%;
   height: 98%;
   position: absolute;
-  top: 23px;
+  top: 25px;
   left: none;
-  right: -15px;
+  right: -18px;
   z-index: -1;
 }
 
@@ -613,6 +640,7 @@ button {
   display: inline-block;
   position: relative;
   z-index: 1;
+  bottom: -40px;
 }
 
 .discover-image::after {
@@ -622,10 +650,19 @@ button {
   width: 100%;
   height: 98%;
   position: absolute;
-  top: 23px;
-  left: -15px;
+  top: 25px;
+  left: -18px;
   right: none;
   z-index: -1;
+}
+
+.workshop-text,
+.discovery-text {
+  width: 80%;
+}
+
+.discover-workshop img {
+  width: 150%;
 }
 
 .discover-workshop p {
@@ -634,7 +671,7 @@ button {
 
 .selling-points {
   background-color: #f0efed;
-  padding: 150px 0 30px;
+  padding: 140px 0 30px;
 }
 
 .selling-points ul {
@@ -648,7 +685,7 @@ button {
 }
 
 .selling-points ul li.selling-point {
-  width: 43%;
+  width: 40%;
   margin: 15px 0;
 }
 

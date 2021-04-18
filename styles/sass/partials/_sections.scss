@@ -59,96 +59,83 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-
+  
   .quarter {
-    width: 42%;
+    width: 45%;
+
+    .mini-wrapper {
+        width: 70%;
+        min-width: 500px;
+
+    }
   }
 }
 
-.discover-text {
-  text-align: right;
+.discover {
+    align-items: center;
+
+    .discover-text {
+        text-align: right;
+        display: flex;
+        justify-content: right;
+        margin-right: -10px;
+
+        .rm-button {
+         float: right;
+       }
+    }
 }
 
-.discover-text .rm-button {
-  float: right;
+.workshop  {
+    align-items: flex-end;
+
+    .right {
+        margin-bottom: 18px;
+    }
 }
+
 
 .workshop-image {
     display: inline-block;
     position: relative;
     z-index: 1;
+    top: -30px;
+    left: -15px;
 
     &::after {
-        @include yellowShadow(98%, 23px, none, -15px);
+        @include yellowShadow(98%, 25px, none, -18px);
     }
 }
 .discover-image {
     display: inline-block;
     position: relative;
     z-index: 1;
+    bottom: -40px;
 
     &::after {
-        @include yellowShadow(98%, 23px, -15px);
+        @include yellowShadow(98%, 25px, -18px);
     }
 }
 
+.workshop-text,
+.discovery-text {
+    width: 80%;
+}
 
+.discover-workshop img {
+    // object-fit: cover;
+    width: 150%;
+}
 
 .discover-workshop p {
   padding: 30px 0;
 }
 
-
-// .two-panel {
-//   display: flex;
-
-//   justify-content: space-between;
-//   flex-wrap: wrap;
-
-  // .aside {
-  //   padding: 120px 0 40px;
-  //   width: 45%;
-  //   text-align: right;
-
-//     p {
-//       margin: 30px 0;
-//     }
-//   }
-// }
-
-// // flipping the right panel so the text is on top
-// .aside.workshop {
-//   display: flex;
-//   flex-direction: column-reverse;
-//   text-align: left;
-// }
-
-// .discover-image,
-// .workshop-image {
-//   width: 140%;
-//   position: relative;
-// }
-
-// .discover-image {
-//   top: -180px;
-//   left: -300px;
-// }
-// .workshop-image {
-//   bottom: -80px;
-//   right:  -50px;
-// }
-
-
-
-
-
-
 //selling-points section +++====+++====+++====+++====++====+++====
 
 .selling-points {
     background-color: $offWhite;
-    padding: 150px 0 30px;
+    padding: 140px 0 30px;
 
     ul {
         display: flex;
@@ -156,7 +143,7 @@ button {
         justify-content: space-around;
 
         li.selling-point {
-            width: 43%;
+            width: 40%;
             // position: relative;
             margin: 15px 0;
         }
