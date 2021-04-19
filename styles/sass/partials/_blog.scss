@@ -143,7 +143,7 @@ fieldset {
         margin: 40px 0 20px;
 
         .user {
-            flex-basis: 46%;
+            width: 46%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -157,7 +157,7 @@ label {
 
 input[type='text'] {
     width: 100%;
-    min-width: 200px;
+    // min-width: 200px;
     background: transparent;
     border: 0;
     border-bottom: 2px solid $lightGreen;

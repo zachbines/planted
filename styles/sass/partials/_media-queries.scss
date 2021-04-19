@@ -60,7 +60,7 @@
     // selling points 
 
     .selling-points {
-        padding: 100px 0 100px 20px;
+        padding: 100px 0 100px 40px;
 
         ul .selling-point {
             width: 80%;
@@ -121,6 +121,11 @@
             } 
         }
     } 
+
+    .contact-info {
+        width: 250px;
+        margin: 50px auto;
+    }
    
 }
 // at 600px there is white space on the right because of the nav
@@ -131,6 +136,11 @@
         overflow: hidden;
     }
 
+    nav {
+        overflow: hidden;
+    }
+    
+
     .hamburger-menu,
     .hamburger-menu {
         visibility: initial;
@@ -138,8 +148,12 @@
 
     ul.nav {
         position: absolute;
+        // background: #000F00;
+        // padding:
+        // width: 250px;
+        margin: 0;
         top: 80px;
-        right: 20px;
+        right: 0px;
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -152,6 +166,7 @@
             margin-bottom: 20px;
 
             a {
+                text-shadow: 5px 5px 3px 5px #000F00;
                 padding-top: 20px;
             }
         }
@@ -210,12 +225,10 @@
         .mini-wrapper {
             width: 90%;
             min-width: 0;
-            margin-left: 20px;
+            margin: 20px 20px;
         }
 
-        .left {
-            margin: 10px 20px 20px 0;
-        }
+        
     }  
 
     .founder .founder-container {
@@ -241,4 +254,71 @@
             width: 90%;
         }
     } 
+
+
+    // blog page/contact page 
+
+    fieldset .name-email {
+        margin: 20px 0 20px;
+
+        .user {
+            width: 100%;
+        }
+    }
+
+    label {
+        margin-top: 15px;
+    }
+    input[type="text"] {
+        min-width: 0;
+    }
+
+    textarea {
+        margin: 0;
+        max-height: 20vh;
+        min-width: 0;
+    }
+
+    // contact form 
+
+    .contact-form {
+        display: inline-block;
+        width: 90%;
+        // margin: 0;
+        .fieldset-container {
+            position: initial;
+            top: 0;
+            margin-top: 20px;
+
+            .shadow-box-form {
+                padding: 20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 420px) {
+
+     p {
+        font-size: 1.6rem;
+    }
+
+    .wrapper {
+        width: 95%;
+    }
+
+    section.about {
+        padding: 60px 0;
+
+        .about-text {
+            margin: 10px auto;
+
+           
+        }
+    }
+
+    .comments {
+        
+    }
 }

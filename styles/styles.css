@@ -1056,8 +1056,7 @@ fieldset .name-email {
 }
 
 fieldset .name-email .user {
-  -ms-flex-preferred-size: 46%;
-      flex-basis: 46%;
+  width: 46%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1076,7 +1075,6 @@ label {
 
 input[type='text'] {
   width: 100%;
-  min-width: 200px;
   background: transparent;
   border: 0;
   border-bottom: 2px solid #0e902d;
@@ -1215,7 +1213,7 @@ button {
     margin-top: 60px;
   }
   .selling-points {
-    padding: 100px 0 100px 20px;
+    padding: 100px 0 100px 40px;
   }
   .selling-points ul .selling-point {
     width: 80%;
@@ -1273,10 +1271,17 @@ button {
     padding: 20px 60px;
     margin-bottom: 0;
   }
+  .contact-info {
+    width: 250px;
+    margin: 50px auto;
+  }
 }
 
 @media (max-width: 672px) {
   header {
+    overflow: hidden;
+  }
+  nav {
     overflow: hidden;
   }
   .hamburger-menu,
@@ -1285,8 +1290,9 @@ button {
   }
   ul.nav {
     position: absolute;
+    margin: 0;
     top: 80px;
-    right: 20px;
+    right: 0px;
     width: 20%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1305,6 +1311,7 @@ button {
     margin-bottom: 20px;
   }
   ul.nav li a {
+    text-shadow: 5px 5px 3px 5px #000F00;
     padding-top: 20px;
   }
   .home-header {
@@ -1351,10 +1358,7 @@ button {
   .aside .half .mini-wrapper {
     width: 90%;
     min-width: 0;
-    margin-left: 20px;
-  }
-  .aside .half .left {
-    margin: 10px 20px 20px 0;
+    margin: 20px 20px;
   }
   .founder .founder-container {
     padding: 40px;
@@ -1375,5 +1379,49 @@ button {
     text-align: center;
     margin: 20px 0;
     width: 90%;
+  }
+  fieldset .name-email {
+    margin: 20px 0 20px;
+  }
+  fieldset .name-email .user {
+    width: 100%;
+  }
+  label {
+    margin-top: 15px;
+  }
+  input[type="text"] {
+    min-width: 0;
+  }
+  textarea {
+    margin: 0;
+    max-height: 20vh;
+    min-width: 0;
+  }
+  .contact-form {
+    display: inline-block;
+    width: 90%;
+  }
+  .contact-form .fieldset-container {
+    position: initial;
+    top: 0;
+    margin-top: 20px;
+  }
+  .contact-form .fieldset-container .shadow-box-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  p {
+    font-size: 1.6rem;
+  }
+  .wrapper {
+    width: 95%;
+  }
+  section.about {
+    padding: 60px 0;
+  }
+  section.about .about-text {
+    margin: 10px auto;
   }
 }
