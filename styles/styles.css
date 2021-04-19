@@ -459,6 +459,31 @@ ul.nav li a {
   margin-right: 10px;
 }
 
+.logo::before {
+  content: '';
+  display: block;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  top: 36px;
+  right: 25px;
+  display: none;
+}
+
+.logo::after {
+  content: '';
+  display: block;
+  border-top: 5px solid #fff;
+  width: 50px;
+  height: 8px;
+  position: absolute;
+  top: 36px;
+  right: 25px;
+  display: none;
+}
+
 .nav-2 {
   background-color: #000F00;
 }
@@ -526,7 +551,7 @@ img {
   max-width: 100%;
 }
 
-section.about {
+.about {
   background-color: #f0efed;
   height: 70vh;
   display: -webkit-box;
@@ -540,12 +565,12 @@ section.about {
           align-items: center;
 }
 
-section.about .about-text {
+.about .about-text {
   width: 80%;
-  margin: 20px auto 0;
+  margin: 30px auto 0;
 }
 
-section.about .about-text p {
+.about .about-text p {
   margin: 20px 0 30px;
 }
 
@@ -694,7 +719,7 @@ button {
       justify-content: space-around;
 }
 
-.selling-points ul li.selling-point {
+.selling-points ul .selling-point {
   width: 40%;
   margin: 15px 0;
 }
@@ -1187,6 +1212,16 @@ button {
     text-align: left;
     padding-left: 20px;
   }
+  .about .about-text {
+    margin-top: 60px;
+  }
+  .selling-points {
+    padding: 100px 0 100px 20px;
+  }
+  .selling-points ul .selling-point {
+    width: 80%;
+    margin: 0;
+  }
   .aside {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1201,6 +1236,22 @@ button {
   }
   .aside .half .left {
     margin: 70px 0 30px;
+  }
+  .founder-banner {
+    min-height: 29vh;
+  }
+  .founder-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .founder-container .founder-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    text-align: right;
+    margin: 10px 0;
+  }
+  .founder-container .founder-text .button {
+    margin: 0 0 0 auto;
   }
   .con {
     -webkit-box-orient: vertical;

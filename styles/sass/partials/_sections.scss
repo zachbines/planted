@@ -4,14 +4,14 @@ img {
     max-width: 100%;
 }
 
-section.about {
+.about {
     background-color: $offWhite;
     height: 70vh;
     @include flexCenter();
 
     .about-text {
         width: 80%;
-        margin: 20px auto 0;
+        margin: 30px auto 0;
         p {
             margin: 20px 0 30px;
         }
@@ -131,7 +131,7 @@ button {
         flex-wrap: wrap;
         justify-content: space-around;
 
-        li.selling-point {
+        .selling-point {
             width: 40%;
             // position: relative;
             margin: 15px 0;

@@ -36,7 +36,8 @@
 
 @media (max-width: 920px) {
 
-    // homepage 
+// homepage 
+
     .layered-background {
         background-position: center bottom;
 
@@ -52,6 +53,20 @@
         }
     }
 
+    .about .about-text {
+        margin-top: 60px;
+    }
+
+    // selling points 
+
+    .selling-points {
+        padding: 100px 0 100px 20px;
+
+        ul .selling-point {
+            width: 80%;
+            margin: 0;
+        }
+    }
     .aside {
         flex-direction: column;
         align-items: center;
@@ -64,6 +79,28 @@
             }
         }
      }   
+
+    // founder section 
+    .founder-banner {
+        // background-size: contain;
+        min-height: 29vh;
+    }
+
+    .founder-container {
+        flex-wrap: wrap;
+
+        .founder-text {
+            flex-basis: 100%;
+            text-align: right;
+            margin: 10px 0;
+
+            .button {
+                margin: 0 0 0 auto;
+            }
+        }
+
+    }
+    
     // contact page 
     .con {
         flex-direction: column-reverse;
@@ -88,3 +125,10 @@
     
 }
 // at 600px there is white space on the right because of the nav
+
+@media (max-width: 672px) {
+
+    .logo:after {
+
+    }
+}
