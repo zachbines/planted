@@ -902,6 +902,14 @@ footer {
   margin: 30px 0 10px;
 }
 
+.about-image {
+  width: 150%;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  right: 100px;
+}
+
 .about-posts-text {
   padding: 25px;
 }
@@ -909,14 +917,6 @@ footer {
 .about-posts-text p {
   padding-left: 2px;
   padding-bottom: 20px;
-}
-
-.about-image {
-  width: 150%;
-  display: inline-block;
-  position: relative;
-  top: -20px;
-  right: 100px;
 }
 
 .mission-comments-form {
@@ -1303,7 +1303,7 @@ button {
     margin: 0;
     top: 90px;
     right: 0px;
-    width: auto;
+    width: 25%;
     height: 180px;
     padding-top: 10px;
     display: -webkit-box;
@@ -1328,8 +1328,8 @@ button {
     line-height: 3px;
   }
   .blog-nav .nav {
-    background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(black));
-    background-image: linear-gradient(to right, transparent, black);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, transparent), to(black));
+    background-image: linear-gradient(to right, transparent 1%, black);
   }
   .home-header {
     height: 60vh;
@@ -1468,6 +1468,10 @@ button {
     width: 100%;
     padding: 0 0 0 10px;
     border-bottom: none;
+  }
+  .mission-text h2 {
+    margin-top: 30px;
+    font-size: 3.5rem;
   }
   .contact-info {
     padding-left: 30px;

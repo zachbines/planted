@@ -1,9 +1,5 @@
 
-//general styles for blog and contact pages ++++=======++++++=======+++++++
-
-
-
-// starting from blog - main ++++++=========+++++++++==========
+// blog header  ++++++=========+++++++++==========
 
 .blog-header {
     background-image: url('../assets/blog-header-1.jpg');
@@ -13,10 +9,14 @@
     }
 }
 
+// blog main section
+
 .blog-main {
     background-color: $offWhite;
     justify-content: flex-end;
 }
+
+// side bar aside +++++++========++++++++++=======
 
 .about-posts {
     background-color: #fff;
@@ -34,15 +34,7 @@
     }
 }
 
-.about-posts-text {
-    padding: 25px;
-}
-
-.about-posts-text p {
-    padding-left: 2px;
-    padding-bottom: 20px;
-}
-
+// image container
 .about-image {
     width: 150%;
     display: inline-block;
@@ -50,6 +42,17 @@
     top: -20px;
     right: 100px;
 }
+
+// text container 
+.about-posts-text {
+    padding: 25px;
+
+    p {
+        padding-left: 2px;
+        padding-bottom: 20px;
+    }
+}
+
 
 // mission statement section ++++=====+++++++=====+++++++=====
 
@@ -62,6 +65,7 @@
     position: relative;
     top: -230px;
     right: 15px;
+    
 }
 
 .mission {
