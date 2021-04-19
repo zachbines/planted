@@ -1,14 +1,9 @@
 @import './partials/setup';
-@import './partials/variables';
 @import './partials/typographic';
 @import './partials/mixins';
-@import './partials/headers';
-@import './partials/sections';
+
+@import './partials/general-styles';
+@import './partials/home';
 @import './partials/blog';
 @import './partials/contact';
 @import './partials/media-queries';
-
-// fonts:
-// font-family: 'Josefin Sans', sans-serif;
-// font-family: 'Roboto', sans-serif; 
-

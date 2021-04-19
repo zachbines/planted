@@ -1,12 +1,17 @@
 
 //general styles for blog and contact pages ++++=======++++++=======+++++++
 
-.blog-con {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 // starting from blog - main ++++++=========+++++++++==========
+
+.blog-header {
+    background-image: url('../assets/blog-header-1.jpg');
+
+    h1 {
+        margin-bottom: 125px;
+    }
+}
 
 .blog-main {
     background-color: $offWhite;
@@ -34,8 +39,8 @@
 }
 
 .about-posts-text p {
-  padding-left: 2px;
-  padding-bottom: 20px;
+    padding-left: 2px;
+    padding-bottom: 20px;
 }
 
 .about-image {
@@ -157,7 +162,6 @@ label {
 
 input[type='text'] {
     width: 100%;
-    // min-width: 200px;
     background: transparent;
     border: 0;
     border-bottom: 2px solid $lightGreen;

@@ -1,0 +1,123 @@
+
+.wrapper {
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.home-header nav,
+.nav-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 25px 0;  
+    width: 53%;
+    min-width: 500px;
+    align-items: flex-end;
+}
+
+ul.nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    transition: all 500ms;
+    
+    li a {
+        padding: 10px;
+    }
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: none;
+    color: white;
+    font-size: 4rem;
+    visibility: hidden; 
+}
+
+
+.hamburger-menu:hover {
+    color: $yellow;
+    cursor: pointer;
+}
+
+.burger:hover ul.nav,
+.burger:active ul.nav {
+    opacity: 1;
+}
+
+// blog/contact nav and header general styles ++++====+++++++======
+
+.blog-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-2 {
+    background-color: #000;
+}
+
+  
+.header-2 {
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+
+    h1 {
+        margin-bottom: 50px;
+        width: 240px;
+        margin-right: 20px;
+    }
+}
+
+
+// general button styling
+.button, 
+button {
+    border: none;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background: $lightGreen;
+    padding: 10px;
+    transition: all 200ms;
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 48px;
+}
+
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
+    background-color: darken($lightGreen, 10);
+    outline-color: $yellow;
+}
+
+
+// all footers +++=======++++++++++========++++++++++==========+++++++=
+
+footer {
+    min-height: 50px;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both
+}

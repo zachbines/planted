@@ -1,20 +1,29 @@
 // general styles
-html {
-  font-size: 62.5%;
 
-  body,
-  input,
-  label,
-  textarea,
-  button {
-    font-family: 'Josefin Sans', sans-serif; 
-    font-size: 2rem;
-  }
+//variable color values 
+
+$black: #2c2c2c;
+$offWhite: #f0efed;
+$darkGreen: #074115;
+$yellow: #f8e71c;
+$lightGreen: #0e902d;
+
+html {
+    font-size: 62.5%;
+
+    body,
+    input,
+    label,
+    textarea,
+    button {
+        font-family: 'Josefin Sans', sans-serif; 
+        font-size: 2rem;
+    }
 }
 
 p,
 .about-posts-text li {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logo {
@@ -24,23 +33,23 @@ p,
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 header,
 .nav a,
 button {
-  color: #fff;
+    color: #fff;
 }
 
 .nav a {
-  text-transform: uppercase;
-  letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 
-  &:hover,
-  &:focus {
-    color: $yellow;
-  }
+    &:hover,
+    &:focus {
+        color: $yellow;
+    }
 }
 
 .nav-2 .logo {
@@ -48,10 +57,10 @@ button {
 }
 
 .header-2 {
-  font-size: 8rem;
-  line-height: 92px;
-  font-weight: 600;
-  color: $yellow;
+    font-size: 8rem;
+    line-height: 92px;
+    font-weight: 600;
+    color: $yellow;
 }
 
 footer {
@@ -60,13 +69,12 @@ footer {
 
 // home-h1 styling
 .home-planted {
-  // font-size: 16.6rem;
-  font-size: calc(11rem + 3vw);
-  letter-spacing: 3px;
+    font-size: calc(11rem + 3vw);
+    letter-spacing: 3px;
 
-  span {
-    color: $yellow;
-  }
+    span {
+        color: $yellow;
+    }
 }
 
 // about section - Home Page +++----+++----+++----+++----
@@ -101,38 +109,38 @@ section.about {
 }
 
 .founder-text h3 {
-  font-size: 4.2rem;
-  font-weight: 600;
+    font-size: 4.2rem;
+    font-weight: 600;
 }
 
 // blog section ++++======+++++++======+++
 
 .about-posts-text h3,
 .comment-text p:first-child {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 .about-posts-text span a {
-  font-style: italic;
-  font-weight: 600;
-  color: $darkGreen;
+    font-style: italic;
+    font-weight: 600;
+    color: $darkGreen;
 }
 
 .about-posts-text ul {
-  list-style: initial;
-  margin: 20px 25px;
+    list-style: initial;
+    margin: 20px 25px;
 
-  li {
-    line-height: 32px; 
-  }
+    li {
+        line-height: 32px; 
+    }
 }
 
 .mission-text h2 {
-  font-size: 4.3rem;
-  font-weight: 600;
-  letter-spacing: 1.2px;
+    font-size: 4.3rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
 }
 
 .mission-text p time {
@@ -140,17 +148,17 @@ section.about {
     color: $darkGreen;
     
     span {
-      font-weight: 600;
+        font-weight: 600;
     }
 }
 
 .comments h3 {
-  font-size: 3.8rem;
-  font-weight: 600;
+    font-size: 3.8rem;
+    font-weight: 600;
 }
 
 .comment-text p:first-child {
-  color: $darkGreen;
+    color: $darkGreen;
 }
 
 
@@ -158,17 +166,17 @@ section.about {
 
 input[type='text'],
 label {
-  font-weight: 300;
-  line-height: 25px;
+    font-weight: 300;
+    line-height: 25px;
 }
 
 button {
-  letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
 .fieldset-container label,
 .fieldset-container textarea  {
-  font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -180,13 +188,13 @@ button {
   }
 
 .contact-email {
-  letter-spacing: 1px;
-  font-size: 2.5rem;
-  color: #000;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    color: #000;
 }
 
 .address span {
-  font-weight: 300;
-  color: $black;
+    font-weight: 300;
+    color: $black;
 }
 

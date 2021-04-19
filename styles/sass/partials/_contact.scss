@@ -1,59 +1,67 @@
-.con-main {
-  background-color: $offWhite;
 
-  .con {
-    align-items: center;
-  }
+// contact page header +++++++++=========++++++++++=========
+.con-header {
+    background-image: url('../assets/contact-header-1.jpg');
+    background-position: bottom;
+}
+
+// cantact main +++++++++=========++++++++++=========
+
+.con-main {
+    background-color: $offWhite;
+
+    .con {
+        align-items: center;
+    }
 }
 
 .contact-info {
-  width: 25%;
-  margin: 50px 0;
+    width: 25%;
+    margin: 50px 0;
 }
 
 .socials {
-  display: flex;
+    display: flex;
 
-  li {
-    padding-right: 25px;
-  }
+    li {
+        padding-right: 25px;
+    }
 }
 
 .contact-email {
-  display: inline-block;
-  padding: 20px 0 20px 2px;
+    display: inline-block;
+    padding: 20px 0 20px 2px;
 }
 
 .address span {
-  display: block;
+    display: block;
 }
 
-// contact form styling ++++++========++++++++========
-
+// contact form  ++++++========++++++++========
 
 .contact-form {
-  width: 75%;
-  margin: -50px 0;
-  
-  .fieldset-container {
-    position: relative;
-    z-index: 1;
-    top: -210px;
-    right: -50px;
+    width: 75%;
+    margin: -50px 0;
+    
+    .fieldset-container {
+        position: relative;
+        z-index: 1;
+        top: -210px;
+        right: -50px;
 
-    .user {
-      padding-bottom: 20px;
+        .user {
+            padding-bottom: 20px;
+        }
     }
-  }
 }
 
 .shadow-box-form {
-  background-color: #fff;
-  padding: 50px 60px 20px;
+    background-color: #fff;
+    padding: 50px 60px 20px;
 
-  &::after {
-    @include yellowShadow(98%, 30px, -20px)
-  }
+    &::after {
+        @include yellowShadow(98%, 30px, -20px)
+    }
 }
 
 

@@ -1,8 +1,37 @@
-// about section - home page +++++======++++++======+++++++
+// header section +++++++=========+++++++++=======++++++
 
-img {
-    max-width: 100%;
+.home-header {
+    position: relative;
+    height: 80vh;
+    background-image: url('../assets/home-image-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+.layered-background {
+    width: 100%;
+    height: 80vh;
+    background-image: url('../assets/header-box.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .home-planted-container {
+        width: 40%;
+        padding: 0 20px;
+
+        h1 {
+            text-align: left;
+            margin: 50px auto 0;
+        }
+    }
+}
+
+// about section - +++++======++++++======+++++++
 
 .about {
     background-color: $offWhite;
@@ -18,57 +47,30 @@ img {
     }
 }
 
-// general button styling
-.button, 
-button {
-    border: none;
-    line-height: 32px;
-    text-align: center;
-    font-weight: 600;
-    color: #fff;
-    background: $lightGreen;
-    padding: 10px;
-    transition: all 200ms;
-}
-
-.button {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: 48px;
-}
-
 // read more buttons
-.rm-button {
-  margin: 0;
-  width: 150px;
-}
 
-.button:hover,
-.button:focus,
-button:hover,
-button:focus {
-    background-color: darken($lightGreen, 10);
-    outline-color: $yellow;
+.rm-button {
+    margin: 0;
+    width: 150px;
 }
 
 // discover-workshop section +++++====+++++======+++++====++++++===
 
 .aside {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  
-  .half {
-    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    .half {
+        width: 45%;
 
-    .mini-wrapper {
-        width: 70%;
-        min-width: 400px;
-        padding: 20px 0px 15px;
-        // margin: 0 20px;
+        .mini-wrapper {
+            width: 70%;
+            min-width: 400px;
+            padding: 20px 0px 15px;
+            // margin: 0 20px;
+        }
     }
-  }
 }
 
 .discover {
@@ -81,8 +83,8 @@ button:focus {
         justify-content: right;
 
         .rm-button {
-         float: right;
-       }
+            float: right;
+        }
     }
 }
 
@@ -217,7 +219,7 @@ button:focus {
     margin: 0;
 }
 
-// gallery section ++++++========++++++++========++++++++++=========++++++++
+// gallery section ++++++========++++++++++=========++++++++
 
 .gallery ul {
     display: flex;
@@ -236,15 +238,4 @@ button:focus {
             margin-right: 0px;
         }
     } 
-}
-
-// footers +++=======++++++++++========++++++++++==========+++++++=
-
-footer {
-    min-height: 50px;
-    background-color: $black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    clear: both
 }
