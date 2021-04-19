@@ -588,6 +588,7 @@ textarea {
 }
 
 textarea {
+  border: 2px solid #0e902d;
   resize: none;
   padding: 50px 30px;
   margin: 10px 0;
