@@ -178,19 +178,20 @@ button {
         align-items: flex-start;
         padding: 100px 0 100px;
 
-        .founder-img {
-            margin-bottom: 40px;
-            margin-right: 40px;
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-
-            &::after {
-                @include yellowShadow(100%, 20px, none, -20px);
-            }
-           
-        }
     }
+}
+
+.founder-img {
+    margin-bottom: 40px;
+    margin-right: 40px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        @include yellowShadow(100%, 20px, none, -20px);
+    }
+   
 }
 
 .founder-text {

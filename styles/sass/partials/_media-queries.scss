@@ -121,14 +121,124 @@
             } 
         }
     } 
-
-    
+   
 }
 // at 600px there is white space on the right because of the nav
 
 @media (max-width: 672px) {
 
-    .logo:after {
-
+    header {
+        overflow: hidden;
     }
+
+    .hamburger-menu,
+    .hamburger-menu {
+        visibility: initial;
+    }
+
+    ul.nav {
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        opacity: 0;  
+        
+
+        li {
+            display: block;
+            margin-bottom: 20px;
+
+            a {
+                padding-top: 20px;
+            }
+        }
+    }
+
+    .home-header {
+        height: 60vh;
+    }
+    
+    .layered-background {
+        background-image: none;
+        height: 40vh;
+        align-items: flex-start;
+
+        .home-planted-container h1 {
+            font-size: calc(4rem + 6vw);
+            text-align: center;
+            padding-top: 160px;
+        } 
+    }
+
+    section.about {
+        padding-bottom: 32px;
+        h2 {
+            font-size: calc(3rem + 2vw);
+    
+        }
+    }
+
+    .discovery-workshop img {
+        width: 50%;
+    }
+    
+    .workshop .workshop-image {
+        min-width: 0;
+        position: initial;
+
+        &:after {
+            position: initial;
+        }
+    }
+
+    .discover-image {
+        min-width: 0;
+        position: initial;
+
+        &:after {
+            position: initial;
+        }
+    }
+
+
+    .aside .half {
+        width: 100%;
+
+        .mini-wrapper {
+            width: 90%;
+            min-width: 0;
+            margin-left: 20px;
+        }
+
+        .left {
+            margin: 10px 20px 20px 0;
+        }
+    }  
+
+    .founder .founder-container {
+        padding: 40px;
+
+        .founder-img {
+            // position: initial;
+            margin: 0 auto 30px;
+        }
+    }
+
+    // gallery 
+
+    .gallery ul {
+        flex-direction: column;
+        align-content: center;
+        margin: 30px auto;
+       
+
+        li {
+            text-align: center;
+            margin: 20px 0;
+            width: 90%;
+        }
+    } 
 }

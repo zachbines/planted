@@ -429,12 +429,15 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 25px 0;
   width: 53%;
   min-width: 500px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 ul.nav {
@@ -449,6 +452,8 @@ ul.nav {
           align-items: flex-end;
   margin-left: 20px;
   margin-bottom: 8px;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 ul.nav li a {
@@ -459,29 +464,23 @@ ul.nav li a {
   margin-right: 10px;
 }
 
-.logo::before {
-  content: '';
-  display: block;
-  border-top: 5px solid #fff;
-  border-bottom: 5px solid #fff;
-  width: 50px;
-  height: 8px;
+.hamburger-menu {
   position: absolute;
-  top: 36px;
-  right: 25px;
+  top: 20px;
+  right: 30px;
   display: none;
+  color: white;
+  font-size: 4rem;
+  visibility: hidden;
 }
 
-.logo::after {
-  content: '';
-  display: block;
-  border-top: 5px solid #fff;
-  width: 50px;
-  height: 8px;
-  position: absolute;
-  top: 36px;
-  right: 25px;
-  display: none;
+.hamburger-menu:hover {
+  color: #f8e71c;
+  cursor: pointer;
+}
+
+.burger:hover ul.nav {
+  opacity: 1;
 }
 
 .nav-2 {
@@ -782,7 +781,7 @@ button {
   padding: 100px 0 100px;
 }
 
-.founder .founder-container .founder-img {
+.founder-img {
   margin-bottom: 40px;
   margin-right: 40px;
   display: inline-block;
@@ -790,7 +789,7 @@ button {
   z-index: 1;
 }
 
-.founder .founder-container .founder-img::after {
+.founder-img::after {
   content: '';
   display: block;
   background-color: #f8e71c;
@@ -1273,5 +1272,108 @@ button {
   .contact-form .fieldset-container .shadow-box-form {
     padding: 20px 60px;
     margin-bottom: 0;
+  }
+}
+
+@media (max-width: 672px) {
+  header {
+    overflow: hidden;
+  }
+  .hamburger-menu,
+  .hamburger-menu {
+    visibility: initial;
+  }
+  ul.nav {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    opacity: 0;
+  }
+  ul.nav li {
+    display: block;
+    margin-bottom: 20px;
+  }
+  ul.nav li a {
+    padding-top: 20px;
+  }
+  .home-header {
+    height: 60vh;
+  }
+  .layered-background {
+    background-image: none;
+    height: 40vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .layered-background .home-planted-container h1 {
+    font-size: calc(4rem + 6vw);
+    text-align: center;
+    padding-top: 160px;
+  }
+  section.about {
+    padding-bottom: 32px;
+  }
+  section.about h2 {
+    font-size: calc(3rem + 2vw);
+  }
+  .discovery-workshop img {
+    width: 50%;
+  }
+  .workshop .workshop-image {
+    min-width: 0;
+    position: initial;
+  }
+  .workshop .workshop-image:after {
+    position: initial;
+  }
+  .discover-image {
+    min-width: 0;
+    position: initial;
+  }
+  .discover-image:after {
+    position: initial;
+  }
+  .aside .half {
+    width: 100%;
+  }
+  .aside .half .mini-wrapper {
+    width: 90%;
+    min-width: 0;
+    margin-left: 20px;
+  }
+  .aside .half .left {
+    margin: 10px 20px 20px 0;
+  }
+  .founder .founder-container {
+    padding: 40px;
+  }
+  .founder .founder-container .founder-img {
+    margin: 0 auto 30px;
+  }
+  .gallery ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 30px auto;
+  }
+  .gallery ul li {
+    text-align: center;
+    margin: 20px 0;
+    width: 90%;
   }
 }
