@@ -1,5 +1,7 @@
 // header section +++++++=========+++++++++=======++++++
 
+// primary background image 
+
 .home-header {
     position: relative;
     height: 80vh;
@@ -8,6 +10,8 @@
     background-size: cover;
     background-attachment: fixed;
 }
+
+// secondary background image 
 
 .layered-background {
     width: 100%;
@@ -35,12 +39,14 @@
 
 .about {
     background-color: $offWhite;
-    height: 70vh;
+    // height: 70vh;
+    padding: 180px 0;
     @include flexCenter();
 
     .about-text {
         width: 80%;
         margin: 30px auto 0;
+
         p {
             margin: 20px 0 30px;
         }

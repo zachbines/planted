@@ -538,6 +538,67 @@ button:focus {
   outline-color: #f8e71c;
 }
 
+fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+}
+
+fieldset .name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 40px 0 20px;
+}
+
+fieldset .name-email .user {
+  width: 46%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label {
+  padding-left: 30px;
+}
+
+input[type='text'],
+textarea {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #0e902d;
+}
+
+textarea {
+  resize: none;
+  padding: 50px 30px;
+  margin: 10px 0;
+  max-height: 30vh;
+}
+
+button {
+  padding: 12px 0 8px;
+  margin: 40px 0;
+}
+
 footer {
   min-height: 50px;
   background-color: #2c2c2c;
@@ -550,7 +611,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  clear: both;
 }
 
 .home-header {
@@ -592,7 +652,7 @@ footer {
 
 .about {
   background-color: #f0efed;
-  height: 70vh;
+  padding: 180px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1038,69 +1098,6 @@ footer {
   margin-bottom: -220px;
 }
 
-fieldset {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 50px;
-}
-
-fieldset .name-email {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 40px 0 20px;
-}
-
-fieldset .name-email .user {
-  width: 46%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-label {
-  padding-left: 30px;
-}
-
-input[type='text'] {
-  width: 100%;
-  background: transparent;
-  border: 0;
-  border-bottom: 2px solid #0e902d;
-}
-
-textarea {
-  background-color: transparent;
-  border: 0;
-  border: 2px solid #0e902d;
-  resize: none;
-  padding: 50px 30px;
-  margin: 10px 0;
-  max-height: 30vh;
-}
-
-button {
-  padding: 12px 0 8px;
-  margin: 40px 0;
-}
-
 .con-header {
   background-image: url("../assets/contact-header-1.jpg");
   background-position: bottom;
@@ -1332,11 +1329,11 @@ button {
     background-image: linear-gradient(to right, transparent 1%, black);
   }
   .home-header {
-    height: 60vh;
+    height: auto;
   }
   .layered-background {
     background-image: none;
-    height: 40vh;
+    height: auto;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1344,10 +1341,10 @@ button {
   .layered-background .home-planted-container h1 {
     font-size: calc(4rem + 6vw);
     text-align: center;
-    padding-top: 160px;
+    padding: 140px 0 40px;
   }
   section.about {
-    padding-bottom: 32px;
+    padding: 30px 0 50px;
   }
   section.about h2 {
     font-size: calc(3rem + 2vw);

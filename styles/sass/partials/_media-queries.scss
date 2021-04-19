@@ -24,13 +24,11 @@
         }
     }
 
-    
     .blog-form {
         margin: 0;
         width: 100%;
         margin-bottom: -100px;
     }
-
 
 }
 
@@ -179,26 +177,26 @@
     }
 
     .home-header {
-        height: 60vh;
+        height: auto;
     }
     
     .layered-background {
         background-image: none;
-        height: 40vh;
+        height: auto;
         align-items: flex-start;
 
         .home-planted-container h1 {
             font-size: calc(4rem + 6vw);
             text-align: center;
-            padding-top: 160px;
+            padding: 140px 0 40px;
         } 
     }
 
     section.about {
-        padding-bottom: 32px;
+        padding: 30px 0 50px;
+
         h2 {
             font-size: calc(3rem + 2vw);
-    
         }
     }
 
