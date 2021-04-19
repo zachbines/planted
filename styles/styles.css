@@ -274,7 +274,7 @@ button {
   letter-spacing: 1px;
 }
 
-.nav a:hover {
+.nav a:hover, .nav a:focus {
   color: #f8e71c;
 }
 
@@ -479,7 +479,8 @@ ul.nav li a {
   cursor: pointer;
 }
 
-.burger:hover ul.nav {
+.burger:hover ul.nav,
+.burger:active ul.nav {
   opacity: 1;
 }
 
@@ -575,13 +576,15 @@ img {
 
 .button,
 button {
-  border: 0;
+  border: none;
   line-height: 32px;
   text-align: center;
   font-weight: 600;
   color: #fff;
   background: #0e902d;
   padding: 10px;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
 }
 
 .button {
@@ -594,6 +597,14 @@ button {
 .rm-button {
   margin: 0;
   width: 150px;
+}
+
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
+  background-color: #09621e;
+  outline-color: #f8e71c;
 }
 
 .aside {
@@ -1284,16 +1295,17 @@ button {
   nav {
     overflow: hidden;
   }
-  .hamburger-menu,
   .hamburger-menu {
     visibility: initial;
   }
   ul.nav {
     position: absolute;
     margin: 0;
-    top: 80px;
+    top: 90px;
     right: 0px;
-    width: 20%;
+    width: auto;
+    height: 180px;
+    padding-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1309,10 +1321,15 @@ button {
   ul.nav li {
     display: block;
     margin-bottom: 20px;
+    text-shadow: 5px 5px 3px 5px #000F00;
   }
   ul.nav li a {
-    text-shadow: 5px 5px 3px 5px #000F00;
-    padding-top: 20px;
+    padding: 20px;
+    line-height: 3px;
+  }
+  .blog-nav .nav {
+    background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(black));
+    background-image: linear-gradient(to right, transparent, black);
   }
   .home-header {
     height: 60vh;
@@ -1380,8 +1397,14 @@ button {
     margin: 20px 0;
     width: 90%;
   }
+  .mission-comments-form {
+    margin: 0 auto;
+  }
+  .comments h3 {
+    margin-bottom: 0px;
+  }
   fieldset .name-email {
-    margin: 20px 0 20px;
+    margin: 20px 5%;
   }
   fieldset .name-email .user {
     width: 100%;
@@ -1390,24 +1413,32 @@ button {
     margin-top: 15px;
   }
   input[type="text"] {
+    width: 100%;
     min-width: 0;
   }
   textarea {
-    margin: 0;
-    max-height: 20vh;
+    margin: 0 auto;
+    min-height: 20vh;
+    width: 90%;
     min-width: 0;
   }
   .contact-form {
     display: inline-block;
-    width: 90%;
+    width: 100%;
+    margin: 0;
   }
   .contact-form .fieldset-container {
     position: initial;
     top: 0;
     margin-top: 20px;
+    width: 100%;
   }
   .contact-form .fieldset-container .shadow-box-form {
     padding: 20px;
+  }
+  button {
+    width: 90%;
+    margin: 20px auto;
   }
 }
 
@@ -1418,10 +1449,30 @@ button {
   .wrapper {
     width: 95%;
   }
+  .hamburger-menu {
+    right: 20px;
+  }
   section.about {
     padding: 60px 0;
   }
   section.about .about-text {
     margin: 10px auto;
+  }
+  .mission {
+    border-left: none;
+  }
+  .mission .mission-image {
+    right: -15px;
+  }
+  .mission-text {
+    width: 100%;
+    padding: 0 0 0 10px;
+    border-bottom: none;
+  }
+  .contact-info {
+    padding-left: 30px;
+  }
+  .shadow-box-form {
+    background-color: transparent;
   }
 }

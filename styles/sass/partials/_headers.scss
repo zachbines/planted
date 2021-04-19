@@ -60,7 +60,8 @@ ul.nav {
   cursor: pointer;
 }
 
-.burger:hover ul.nav {
+.burger:hover ul.nav,
+.burger:active ul.nav {
       // top: 80px;
       // right: 20px;
       opacity: 1;
