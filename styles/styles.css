@@ -590,14 +590,35 @@ textarea {
 textarea {
   border: 2px solid #0e902d;
   resize: none;
-  padding: 50px 30px;
-  margin: 10px 0;
-  max-height: 30vh;
+  padding: 40px 30px;
+  margin: 20px 0;
+  height: 28vh;
+  min-height: 200px;
+}
+
+textarea::-webkit-input-placeholder {
+  font-weight: 300;
+  opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+  font-weight: 300;
+  opacity: 1;
+}
+
+textarea::-ms-input-placeholder {
+  font-weight: 300;
+  opacity: 1;
+}
+
+textarea::placeholder {
+  font-weight: 300;
+  opacity: 1;
 }
 
 button {
   padding: 12px 0 8px;
-  margin: 40px 0;
+  margin: 25px 0;
 }
 
 footer {
@@ -997,7 +1018,7 @@ footer {
           align-items: end;
   position: relative;
   top: -230px;
-  right: 15px;
+  right: 10px;
 }
 
 .mission {
@@ -1172,6 +1193,11 @@ footer {
   z-index: -1;
 }
 
+.shadow-box-form textarea {
+  min-height: 33vh;
+  margin: 15px 0 25px;
+}
+
 @media (max-width: 1100px) {
   .blog-main {
     -webkit-box-orient: vertical;
@@ -1187,6 +1213,7 @@ footer {
   }
   .mission-comments-form {
     top: -80px;
+    right: 0;
     width: 100%;
     -webkit-box-align: center;
         -ms-flex-align: center;

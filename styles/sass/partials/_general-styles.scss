@@ -149,14 +149,20 @@ textarea {
 textarea {
     border: 2px solid $lightGreen;
     resize: none;
-    padding: 50px 30px;
-    margin: 10px 0;
-    max-height: 30vh;
-}
+    padding: 40px 30px;
+    margin: 20px 0;
+    height: 28vh;
+    min-height: 200px;
+
+    &::placeholder {
+        font-weight: 300;
+        opacity: 1;
+    }
+}   
 
 button {
     padding: 12px 0 8px;
-    margin: 40px 0;
+    margin: 25px 0;
 }
 
 

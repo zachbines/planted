@@ -64,6 +64,11 @@
     &::after {
         @include yellowShadow(98%, 30px, -20px)
     }
+
+    textarea {
+        min-height: 33vh;
+        margin: 15px 0 25px;
+    }
 }
 
 
