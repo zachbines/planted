@@ -453,8 +453,8 @@ ul.nav {
           align-items: flex-end;
   margin-left: 20px;
   margin-bottom: 8px;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
+  -webkit-transition: opacity 500ms;
+  transition: opacity 500ms;
 }
 
 ul.nav li a {
@@ -1237,7 +1237,7 @@ footer {
     display: none;
   }
   .about-posts-text {
-    width: 80%;
+    width: 360px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1352,9 +1352,7 @@ footer {
 }
 
 @media (max-width: 672px) {
-  header {
-    overflow: hidden;
-  }
+  header,
   nav {
     overflow: hidden;
   }
@@ -1365,10 +1363,10 @@ footer {
     position: absolute;
     margin: 0;
     top: 85px;
-    right: 0px;
+    right: 0;
     width: 25%;
     height: 180px;
-    padding-top: 10px;
+    padding: 10px 8px 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1391,9 +1389,11 @@ footer {
     line-height: 3px;
   }
   .blog-nav .nav {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, transparent), to(black)), -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(transparent));
-    background-image: linear-gradient(to right, transparent 1%, black), linear-gradient(to top, transparent 50%, transparent);
-    border-radius: 0 0 0 80px;
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, transparent), to(black));
+    background-image: linear-gradient(to right, transparent 20%, black);
+  }
+  .blog-nav .nav li a {
+    text-shadow: 1px 1px 5px black;
   }
   .home-header,
   .header-2 {
