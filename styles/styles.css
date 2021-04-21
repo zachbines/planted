@@ -467,9 +467,8 @@ ul.nav li a {
 
 .hamburger-menu {
   position: absolute;
-  top: 20px;
+  top: 27px;
   right: 30px;
-  display: none;
   color: white;
   font-size: 4rem;
   visibility: hidden;
@@ -1392,8 +1391,8 @@ footer {
     line-height: 3px;
   }
   .blog-nav .nav {
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, transparent), to(black));
-    background-image: linear-gradient(to right, transparent 1%, black);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, transparent), to(black)), -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(transparent));
+    background-image: linear-gradient(to right, transparent 1%, black), linear-gradient(to top, transparent 50%, transparent);
   }
   .home-header,
   .header-2 {

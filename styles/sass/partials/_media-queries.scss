@@ -196,7 +196,8 @@
     }
 
     .blog-nav .nav {
-        background-image: linear-gradient(to right, transparent 1%, black);
+        background-image: linear-gradient(to right, transparent 1%, black), linear-gradient(to top, transparent 50%, transparent);
+        border-radius
     }
 
     .home-header,
