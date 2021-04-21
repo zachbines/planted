@@ -173,7 +173,7 @@
     ul.nav {
         position: absolute;
         margin: 0;
-        top: 90px;
+        top: 85px;
         right: 0px;
         width: 25%;
         height: 180px;
@@ -197,7 +197,7 @@
 
     .blog-nav .nav {
         background-image: linear-gradient(to right, transparent 1%, black), linear-gradient(to top, transparent 50%, transparent);
-        border-radius
+        border-radius: 0 0 0 80px;
     }
 
     .home-header,

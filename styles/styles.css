@@ -1364,7 +1364,7 @@ footer {
   ul.nav {
     position: absolute;
     margin: 0;
-    top: 90px;
+    top: 85px;
     right: 0px;
     width: 25%;
     height: 180px;
@@ -1393,6 +1393,7 @@ footer {
   .blog-nav .nav {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, transparent), to(black)), -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(transparent));
     background-image: linear-gradient(to right, transparent 1%, black), linear-gradient(to top, transparent 50%, transparent);
+    border-radius: 0 0 0 80px;
   }
   .home-header,
   .header-2 {
