@@ -339,7 +339,8 @@ section.about h2 {
 .about-posts-text h3,
 .comment-text p:first-child {
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 3rem;
+  font-size: 2.7rem;
+  letter-spacing: 1.2px;
   font-weight: 600;
 }
 
@@ -349,13 +350,18 @@ section.about h2 {
   color: #074115;
 }
 
-.about-posts-text ul {
-  list-style: initial;
-  margin: 20px 25px;
+.about-posts-text li {
+  line-height: 32px;
+  position: relative;
 }
 
-.about-posts-text ul li {
-  line-height: 32px;
+.about-posts-text li::before {
+  content: '\2022';
+  display: inline-block;
+  color: #0e902d;
+  font-size: 16px;
+  position: absolute;
+  left: -20px;
 }
 
 .mission-text h2 {
@@ -427,7 +433,7 @@ button {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 25px 0;
+  padding: 30px 0 15px;
   width: 53%;
   min-width: 500px;
   -webkit-box-align: end;
@@ -493,7 +499,7 @@ ul.nav li a {
 }
 
 .header-2 {
-  min-height: 50vh;
+  min-height: 54vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -969,36 +975,43 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 600px;
-      flex-basis: 600px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: calc(100% / 3);
-  max-width: 430px;
+  max-width: 410px;
   height: 100%;
-  margin: 100px 50px;
+  margin: 142px 50px;
 }
 
 .about-posts h3 {
-  margin: 30px 0 10px;
+  margin: 15px 0;
 }
 
 .about-image {
-  width: 150%;
+  width: 125%;
   display: inline-block;
   position: relative;
   top: -20px;
-  right: 100px;
+  right: 125px;
+}
+
+.about-image img {
+  width: 100%;
 }
 
 .about-posts-text {
-  padding: 25px;
+  padding: 0 25px 15px;
 }
 
 .about-posts-text p {
   padding-left: 2px;
   padding-bottom: 20px;
+  margin-bottom: 60px;
+}
+
+.about-posts-text ul {
+  margin: 25px 35px;
 }
 
 .mission-comments-form {
@@ -1017,7 +1030,7 @@ footer {
       -ms-flex-align: end;
           align-items: end;
   position: relative;
-  top: -230px;
+  top: -250px;
   right: 10px;
 }
 
@@ -1195,7 +1208,6 @@ footer {
 
 .shadow-box-form textarea {
   min-height: 33vh;
-  margin: 15px 0 25px;
 }
 
 @media (max-width: 1100px) {
@@ -1207,11 +1219,38 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
-  .blog-main .about-posts {
+  .about-posts {
+    background: none;
+    margin: 20px auto;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-posts .about-posts-text p,
+  .about-posts .about-posts-text > h3,
+  .about-posts .about-image {
     display: none;
   }
+  .about-posts-text {
+    width: 80%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    top: -10px;
+    left: 46%;
+    opacity: 0.6;
+    z-index: 20;
+  }
   .mission-comments-form {
+    position: relative;
     top: -80px;
     right: 0;
     width: 100%;
@@ -1356,7 +1395,8 @@ footer {
     background-image: -webkit-gradient(linear, left top, right top, color-stop(1%, transparent), to(black));
     background-image: linear-gradient(to right, transparent 1%, black);
   }
-  .home-header {
+  .home-header,
+  .header-2 {
     height: auto;
   }
   .layered-background {
@@ -1428,6 +1468,9 @@ footer {
   .comments h3 {
     margin-bottom: 0px;
   }
+  .about-posts-text {
+    display: none;
+  }
   fieldset .name-email {
     margin: 20px 5%;
   }
@@ -1442,10 +1485,10 @@ footer {
     min-width: 0;
   }
   textarea {
+    margin: 0;
     margin: 0 auto;
     min-height: 20vh;
     width: 90%;
-    min-width: 0;
   }
   .contact-form {
     display: inline-block;

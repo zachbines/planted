@@ -1,15 +1,41 @@
 @media (max-width: 1100px) {
 
     .blog-main {
+        // display: block
         flex-direction: column;
         align-items: center;
+        position: relative;
 
-        .about-posts {
+    }
+    
+    .about-posts {
+        background: none;
+        margin: 20px auto;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .about-posts-text p,
+        .about-posts-text > h3,
+        .about-image {
             display: none;
         }
     }
 
+
+    .about-posts-text {
+        width: 80%;
+        flex-direction: row;
+        position: absolute;
+        top: -10px;
+        left: 46%;
+        opacity: 0.6;
+        z-index: 20;
+    }
+
     .mission-comments-form {
+        // position: static;
+        position: relative;
         top: -80px;  
         right: 0;
         width: 100%;
@@ -128,7 +154,6 @@
     }
    
 }
-// at 600px there is white space on the right because of the nav
 
 @media (max-width: 672px) {
 
@@ -147,9 +172,6 @@
 
     ul.nav {
         position: absolute;
-        // background: #000F00;
-        // padding:
-        // width: 250px;
         margin: 0;
         top: 90px;
         right: 0px;
@@ -177,7 +199,8 @@
         background-image: linear-gradient(to right, transparent 1%, black);
     }
 
-    .home-header {
+    .home-header,
+    .header-2 {
         height: auto;
     }
     
@@ -272,7 +295,9 @@
 
     // blog page/contact page 
 
-  
+    .about-posts-text {
+        display: none;
+    }
 
     fieldset .name-email {
         margin: 20px 5%;
@@ -292,10 +317,10 @@
     }
 
     textarea {
+        margin: 0;
         margin: 0 auto;
         min-height: 20vh;
         width: 90%;
-        min-width: 0;
     }
 
     // contact form 

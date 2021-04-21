@@ -118,7 +118,8 @@ section.about {
 .about-posts-text h3,
 .comment-text p:first-child {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
+    letter-spacing: 1.2px;
     font-weight: 600;
 }
 
@@ -128,13 +129,21 @@ section.about {
     color: $darkGreen;
 }
 
-.about-posts-text ul {
-    list-style: initial;
-    margin: 20px 25px;
 
-    li {
-        line-height: 32px; 
+
+.about-posts-text li {
+    line-height: 32px; 
+    position: relative;
+
+    &::before {
+        content: '\2022';
+        display: inline-block;
+        color: $lightGreen;
+        font-size: 16px;
+        position: absolute;
+        left: -20px;
     }
+    
 }
 
 .mission-text h2 {
