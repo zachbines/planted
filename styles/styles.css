@@ -1400,7 +1400,8 @@ footer {
     height: auto;
   }
   .layered-background {
-    background-image: none;
+    background-size: 50%;
+    background-position: 10% center;
     height: auto;
     -webkit-box-align: start;
         -ms-flex-align: start;
