@@ -1,6 +1,5 @@
 @media (max-width: 1100px) {
 
-
     ul.nav li {
         margin: 0 5px;
     }
@@ -38,7 +37,6 @@
     }
 
     .mission-comments-form {
-        // position: static;
         position: relative;
         top: -80px;  
         right: 0;
@@ -62,6 +60,7 @@
     }
 
 }
+
 
 @media (max-width: 920px) {
 
@@ -96,6 +95,7 @@
             margin: 0;
         }
     }
+
     .aside {
         flex-direction: column;
         align-items: center;
@@ -110,6 +110,7 @@
      }   
 
     // founder section 
+
     .founder-banner {
         min-height: 29vh;
     }
@@ -126,11 +127,11 @@
                 margin: 0 0 0 auto;
             }
         }
-
     }
 
   
     // contact page 
+
     .con {
         flex-direction: column-reverse;
         justify-content: center;
@@ -177,7 +178,7 @@
         position: absolute;
         margin: 0;
         top: 85px;
-        right: 8px;
+        right: 0;
         width: 25%;
         height: 180px;
         padding: 10px 0 0 0;
@@ -192,7 +193,7 @@
             text-shadow: 5px 5px 3px 5px #000F00;
 
             a {
-                padding: 20px;
+                padding: 28px;
                 line-height: 3px;
             }
         }
@@ -200,6 +201,7 @@
 
     .blog-nav .nav {
        background-image: linear-gradient(to right, transparent 20%, black);
+    
         li a {
             text-shadow: 1px 1px 5px black;
         }
@@ -363,6 +365,10 @@
     ul.nav {
         right: 0;
         font-size: 1.6rem;
+
+        li a {
+            padding: 18px;
+        }
     }
 
     .wrapper {

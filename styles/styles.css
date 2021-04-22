@@ -1386,7 +1386,7 @@ footer {
     position: absolute;
     margin: 0;
     top: 85px;
-    right: 8px;
+    right: 0;
     width: 25%;
     height: 180px;
     padding: 10px 0 0 0;
@@ -1408,7 +1408,7 @@ footer {
     text-shadow: 5px 5px 3px 5px #000F00;
   }
   ul.nav li a {
-    padding: 20px;
+    padding: 28px;
     line-height: 3px;
   }
   .blog-nav .nav {
@@ -1536,6 +1536,9 @@ footer {
   ul.nav {
     right: 0;
     font-size: 1.6rem;
+  }
+  ul.nav li a {
+    padding: 18px;
   }
   .wrapper {
     width: 95%;
