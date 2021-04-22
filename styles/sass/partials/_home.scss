@@ -187,54 +187,53 @@
 
 // founder section ++++++========+++++++++=========+++++++++
 
-// background banner image 
-    //I made this a background image because i dont beleive that it semantically added anything to the content
-
-.founder-banner {
-    min-height: 50vh;
-    background-image: url('../assets/banner-image.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    
-}
 
 .founder {
     background-color: $offWhite;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+    
+// background banner image 
+    // (I made this a background image because I dont beleive that it semantically adds anything to the content)
 
-    .founder-container { 
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 100px 0 100px;
-
-    }
+.founder-banner {
+    min-height: 50vh;
+    background-image: url('../assets/banner-image.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;   
 }
 
-.founder-img {
-    margin-bottom: 40px;
-    margin-right: 40px;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
+//all founder container content
 
-    &::after {
-        @include yellowShadow(100%, 20px, none, -20px);
+.founder-container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px 0 100px;
+    
+    .founder-img {
+        margin-bottom: 40px;
+        margin-right: 40px;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+    
+        &::after {
+            @include yellowShadow(100%, 20px, none, -20px);
+        }  
     }
-   
 }
 
 .founder-text {
     flex-basis: 65%;
     text-align: left;
-    // margin: 0 auto;
-}
 
-.founder-text p {
-    margin: 25px 0 45px;
+    p {
+       margin: 25px 0 45px;
+    }
 }
 
 .founder-text .fom-button {
@@ -242,6 +241,8 @@
 }
 
 // gallery section ++++++========++++++++++=========++++++++
+
+// general gallery styles
 
 .gallery ul {
     display: flex;
@@ -251,8 +252,10 @@
 
     li {
         width: calc(33% - 20px);
-        // min-width: 300px;
         margin: 0 10px;
+        
+        // getting rid of margins on first/last child 
+
         &:first-child {
             margin-left: 0px;
         }

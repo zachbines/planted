@@ -1,5 +1,3 @@
-// general styles
-
 //variable color values 
 
 $black: #2c2c2c;
@@ -7,6 +5,8 @@ $offWhite: #f0efed;
 $darkGreen: #074115;
 $yellow: #f8e71c;
 $lightGreen: #0e902d;
+
+// general sites styles
 
 html {
     font-size: 62.5%;
@@ -45,6 +45,7 @@ button {
 .nav a {
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: all 300ms;
 
     &:hover,
     &:focus {
@@ -162,7 +163,7 @@ section.about {
 }
 
 .comments h3 {
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 

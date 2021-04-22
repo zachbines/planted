@@ -276,6 +276,8 @@ button {
 .nav a {
   text-transform: uppercase;
   letter-spacing: 1px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
 }
 
 .nav a:hover, .nav a:focus {
@@ -380,7 +382,7 @@ section.about h2 {
 }
 
 .comments h3 {
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -446,15 +448,19 @@ ul.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-left: 20px;
   margin-bottom: 8px;
   -webkit-transition: opacity 500ms;
   transition: opacity 500ms;
+}
+
+ul.nav li {
+  margin: 0 18px;
 }
 
 ul.nav li a {
@@ -462,7 +468,7 @@ ul.nav li a {
 }
 
 .logo {
-  margin-right: 10px;
+  margin-right: 27px;
 }
 
 .hamburger-menu {
@@ -472,6 +478,8 @@ ul.nav li a {
   color: white;
   font-size: 4rem;
   visibility: hidden;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
 }
 
 .hamburger-menu:hover {
@@ -498,7 +506,7 @@ ul.nav li a {
 }
 
 .header-2 {
-  min-height: 54vh;
+  min-height: 49vh;
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -510,7 +518,7 @@ ul.nav li a {
 }
 
 .header-2 h1 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   width: 240px;
   margin-right: 20px;
 }
@@ -540,7 +548,6 @@ button {
 button:hover,
 button:focus {
   background-color: #09621e;
-  outline-color: #f8e71c;
 }
 
 fieldset {
@@ -597,7 +604,7 @@ textarea {
   resize: none;
   padding: 40px 30px;
   margin: 20px 0;
-  height: 28vh;
+  height: 20vh;
   min-height: 200px;
 }
 
@@ -622,8 +629,8 @@ textarea::placeholder {
 }
 
 button {
-  padding: 12px 0 8px;
-  margin: 25px 0;
+  padding: 10px 0 8px;
+  margin: 25px 0 35px;
 }
 
 footer {
@@ -854,14 +861,6 @@ footer {
   margin: 18px 0 40px;
 }
 
-.founder-banner {
-  min-height: 50vh;
-  background-image: url("../assets/banner-image.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
-
 .founder {
   background-color: #f0efed;
   display: -webkit-box;
@@ -876,7 +875,15 @@ footer {
           justify-content: flex-start;
 }
 
-.founder .founder-container {
+.founder-banner {
+  min-height: 50vh;
+  background-image: url("../assets/banner-image.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.founder-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -889,7 +896,7 @@ footer {
   padding: 100px 0 100px;
 }
 
-.founder-img {
+.founder-container .founder-img {
   margin-bottom: 40px;
   margin-right: 40px;
   display: inline-block;
@@ -897,7 +904,7 @@ footer {
   z-index: 1;
 }
 
-.founder-img::after {
+.founder-container .founder-img::after {
   content: '';
   display: block;
   background-color: #f8e71c;
@@ -1048,7 +1055,6 @@ footer {
 }
 
 .mission-image {
-  display: inline-block;
   position: relative;
   z-index: 1;
   top: -15px;
@@ -1086,9 +1092,13 @@ footer {
   padding: 15px 0 0;
 }
 
+.comments h3 {
+  margin-bottom: 10px;
+}
+
 .comments {
   width: 80%;
-  margin-top: 70px;
+  margin-top: 50px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1113,17 +1123,16 @@ footer {
 .comments li .comment-text {
   -ms-flex-preferred-size: 80%;
       flex-basis: 80%;
-  padding: 0 0px 0 0;
 }
 
 .comments img {
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
-  margin: 0 30px 20px 0;
+  margin: 3px 30px 20px 0;
 }
 
-.comments h3 {
-  margin-bottom: 30px;
+.comment-text p {
+  margin-bottom: 10px;
 }
 
 .blog-form {
@@ -1151,19 +1160,19 @@ footer {
   margin: 50px 0;
 }
 
-.socials {
+.contact-info .socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.socials li {
+.contact-info .socials li {
   padding-right: 25px;
 }
 
 .contact-email {
   display: inline-block;
-  padding: 20px 0 20px 2px;
+  padding: 25px 0 25px 2px;
 }
 
 .address span {
@@ -1183,7 +1192,7 @@ footer {
 }
 
 .contact-form .fieldset-container .user {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .shadow-box-form {
@@ -1205,10 +1214,13 @@ footer {
 }
 
 .shadow-box-form textarea {
-  min-height: 33vh;
+  min-height: 26vh;
 }
 
 @media (max-width: 1100px) {
+  ul.nav li {
+    margin: 0 5px;
+  }
   .blog-main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1337,7 +1349,7 @@ footer {
     width: 90%;
   }
   .contact-form .fieldset-container {
-    top: -50px;
+    top: -30px;
     right: 0;
   }
   .contact-form .fieldset-container .shadow-box-form {
@@ -1356,16 +1368,16 @@ footer {
     overflow: hidden;
   }
   .hamburger-menu {
-    visibility: initial;
+    visibility: visible;
   }
   ul.nav {
     position: absolute;
     margin: 0;
     top: 85px;
-    right: 0;
+    right: 8px;
     width: 25%;
     height: 180px;
-    padding: 10px 8px 0 0;
+    padding: 10px 0 0 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1380,7 +1392,7 @@ footer {
   }
   ul.nav li {
     display: block;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     text-shadow: 5px 5px 3px 5px #000F00;
   }
   ul.nav li a {
@@ -1420,18 +1432,13 @@ footer {
   .discovery-workshop img {
     width: 50%;
   }
-  .workshop .workshop-image {
-    min-width: 0;
-    position: initial;
-  }
-  .workshop .workshop-image:after {
-    position: initial;
-  }
+  .workshop .workshop-image,
   .discover-image {
     min-width: 0;
     position: initial;
   }
-  .discover-image:after {
+  .workshop .workshop-image::after,
+  .discover-image::after {
     position: initial;
   }
   .aside .half {
@@ -1462,12 +1469,6 @@ footer {
     margin: 20px 0;
     width: 90%;
   }
-  .mission-comments-form {
-    margin: 0 auto;
-  }
-  .comments h3 {
-    margin-bottom: 0px;
-  }
   .about-posts-text {
     display: none;
   }
@@ -1489,6 +1490,12 @@ footer {
     margin: 0 auto;
     min-height: 20vh;
     width: 90%;
+  }
+  .mission-comments-form {
+    margin: 0 auto;
+  }
+  .comments h3 {
+    margin-bottom: 0;
   }
   .contact-form {
     display: inline-block;
@@ -1514,6 +1521,10 @@ footer {
   p {
     font-size: 1.6rem;
   }
+  ul.nav {
+    right: 0;
+    font-size: 1.6rem;
+  }
   .wrapper {
     width: 95%;
   }
@@ -1528,9 +1539,6 @@ footer {
   }
   .mission {
     border-left: none;
-  }
-  .mission .mission-image {
-    right: -15px;
   }
   .mission-text {
     width: 100%;

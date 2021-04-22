@@ -1,11 +1,12 @@
 
 // contact page header +++++++++=========++++++++++=========
+
 .con-header {
     background-image: url('../assets/contact-header-1.jpg');
     background-position: bottom;
 }
 
-// cantact main +++++++++=========++++++++++=========
+// contact main +++++++++=========++++++++++=========
 
 .con-main {
     background-color: $offWhite;
@@ -18,20 +19,23 @@
 .contact-info {
     width: 25%;
     margin: 50px 0;
-}
 
-.socials {
-    display: flex;
+    .socials {
+        display: flex;
 
-    li {
-        padding-right: 25px;
+        li {
+            padding-right: 25px;
+        }
     }
 }
 
+
 .contact-email {
     display: inline-block;
-    padding: 20px 0 20px 2px;
+    padding: 25px 0 25px 2px;
 }
+
+// getting every part of the address 
 
 .address span {
     display: block;
@@ -50,7 +54,7 @@
         right: -50px;
 
         .user {
-            padding-bottom: 20px;
+            padding-bottom: 18px;
         }
     }
 }
@@ -66,8 +70,6 @@
     }
 
     textarea {
-        min-height: 33vh;
+        min-height: 26vh;
     }
 }
-
-
