@@ -118,7 +118,12 @@ button {
 button:hover,
 button:focus {
     background-color: darken($lightGreen, 10);
-    // box-shadow: 1px 1px 10px darken($yellow, 10);
+}
+
+// default for all images
+
+img {
+    max-width: 100%;
 }
 
 // styling for both forms ++++++===========+++++++++===========+++++++++=
@@ -169,7 +174,7 @@ textarea {
     }
 }   
 
-// form button styling 
+// forms button styling 
 
 button {
     padding: 10px 0 8px;

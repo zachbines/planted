@@ -29,10 +29,22 @@
     }
 }
 
+.socials a:hover,
+.socials a:focus {
+    color: darken($lightGreen, 10);
+}
+
 
 .contact-email {
     display: inline-block;
-    padding: 25px 0 25px 2px;
+    padding: 10px 0;
+    margin: 15px 0 15px 2px;
+    transition: all 200ms;
+
+    &:hover,
+    &:focus {
+        color: darken($lightGreen, 10);
+    }
 }
 
 // getting every part of the address 
