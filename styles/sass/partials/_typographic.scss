@@ -6,7 +6,7 @@ $darkGreen: #074115;
 $yellow: #f8e71c;
 $lightGreen: #0e902d;
 
-// general sites styles
+// general typog styles
 
 html {
     font-size: 62.5%;
@@ -25,6 +25,8 @@ p,
 .about-posts-text li {
     font-family: 'Roboto', sans-serif;
 }
+
+//top left logo / nav typog stying
 
 .logo {
     font-size: 4.2rem;
@@ -57,6 +59,8 @@ button {
     color: #fff;
 }
 
+//Blog/Get in Touch typog stying
+
 .header-2 {
     font-size: 8rem;
     line-height: 92px;
@@ -68,7 +72,8 @@ footer {
     color: #fff;
 }
 
-// home-h1 styling
+// home-h1 typog styling
+
 .home-planted {
     font-size: calc(11rem + 3vw);
     letter-spacing: 3px;
@@ -78,14 +83,14 @@ footer {
     }
 }
 
-// about section - Home Page +++----+++----+++----+++----
+// about section - Home Page typog styling +++----+++----+++----+++----
 
 // general for all section p
+
 section p,
 article p,
 aside p {
     line-height: 32px;
-
 }
 
 section.about {
@@ -99,7 +104,7 @@ section.about {
     }
 }
 
-// discover workshop section typog. +++====+++====+++====+++====+++====+++
+// discover workshop section typog styling +++====+++====+++====+++====++
 
 .discover-text h3,
 .workshop-text h3,
@@ -114,7 +119,7 @@ section.about {
     font-weight: 600;
 }
 
-// blog section ++++======+++++++======+++
+// blog section typog styling ++++======+++++++======+++
 
 .about-posts-text h3,
 .comment-text p:first-child {
@@ -129,8 +134,6 @@ section.about {
     font-weight: 600;
     color: $darkGreen;
 }
-
-
 
 .about-posts-text li {
     line-height: 32px; 
@@ -171,7 +174,6 @@ section.about {
     color: $darkGreen;
 }
 
-
 // form typog styling +++++======+++++++=======
 
 input[type='text'],
@@ -188,7 +190,6 @@ button {
 .fieldset-container textarea  {
     font-family: 'Roboto', sans-serif;
 }
-
 
 // contact ++++++=========+++++++=========++++++++=
 

@@ -4,6 +4,9 @@
   align-items: center;
 }
 
+// this mixin creates the yellow box shadow
+  //i decided to use these instead of the box-shadow property because it looks like the shadows in the PSD are slightly varying sizes relative to the images they fall behind.
+
 @mixin yellowShadow($height, $top, $left: none, $right: none) {
   content: '';
   display: block;
