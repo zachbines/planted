@@ -726,6 +726,41 @@ footer {
   padding: 20px 0px 15px;
 }
 
+.workshop-image,
+.discover-image {
+  min-width: 480px;
+  position: relative;
+  z-index: 1;
+}
+
+.discover-workshop img {
+  width: 150%;
+}
+
+.workshop {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.workshop .workshop-image {
+  top: -30px;
+  left: -15px;
+}
+
+.workshop .workshop-image::after {
+  content: '';
+  display: block;
+  background-color: #f8e71c;
+  width: 100%;
+  height: 98%;
+  position: absolute;
+  top: 25px;
+  left: none;
+  right: -18px;
+  z-index: -1;
+}
+
 .discover {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -750,39 +785,7 @@ footer {
   float: right;
 }
 
-.workshop {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-.workshop .workshop-image {
-  min-width: 480px;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
-  top: -30px;
-  left: -15px;
-}
-
-.workshop .workshop-image::after {
-  content: '';
-  display: block;
-  background-color: #f8e71c;
-  width: 100%;
-  height: 98%;
-  position: absolute;
-  top: 25px;
-  left: none;
-  right: -18px;
-  z-index: -1;
-}
-
 .discover-image {
-  min-width: 480px;
-  display: inline-block;
-  position: relative;
-  z-index: 1;
   bottom: -40px;
 }
 
@@ -802,10 +805,6 @@ footer {
 .workshop-text,
 .discovery-text {
   width: 80%;
-}
-
-.discover-workshop img {
-  width: 150%;
 }
 
 .discover-workshop p {
