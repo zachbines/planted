@@ -183,8 +183,13 @@ form.addEventListener('submit', function(event) {
     })
 
 
+// //  mouse over events 
+//     const homeHeading = document.querySelector('.home-planted');
+
+//     homeHeading.addEventListener('mouseover', function(event) {
+//         event.target.classList.toggle('mouse-shimmer');
+//     })
 
 
 
-// For the hamburger menu's 
 
