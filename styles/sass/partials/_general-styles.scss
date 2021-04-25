@@ -189,3 +189,9 @@ footer {
     background-color: $black;
     @include flexCenter();
 }
+
+// for js +++++++=========+++++++++++=========++++++++++====
+
+.capitalize span {
+    text-transform: capitalize;
+}

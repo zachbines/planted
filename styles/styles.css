@@ -647,6 +647,10 @@ footer {
           align-items: center;
 }
 
+.capitalize span {
+  text-transform: capitalize;
+}
+
 .home-header {
   position: relative;
   height: 80vh;

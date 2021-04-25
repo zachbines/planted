@@ -1,3 +1,4 @@
+//  for the blog form comment page
 
 //these three functions Format todays date to match the sites style 
 const monthFormat = (today) => {
@@ -122,8 +123,8 @@ const generatePost = (userName, userComment) => {
     // create new paragraphs with user info
         // date/name    
     const dateNameP = document.createElement('p');
-    dateNameP.innerHTML = `<time>${todaysDate}</time> by ${userName}`;
-
+    dateNameP.innerHTML = `<time>${todaysDate}</time> by <span>${userName}<span>`;
+    dateNameP.classList.add('capitalize');
         //users comment
             //make a p tag
     const userCommentP = document.createElement('p');
@@ -153,8 +154,12 @@ form.addEventListener('submit', function(event) {
         // get the name and comment values 
         const userInput = document.getElementById('user-name');
         const userName = userInput.value;
+
         const textArea = document.getElementById('comment');
         const comment = textArea.value;
+        // egt user email (to clear after, for these purposes)
+        const emailInput = document.getElementById('user-email');
+
         console.log(userName);
         console.log(comment);
 
@@ -163,14 +168,23 @@ form.addEventListener('submit', function(event) {
             //create a new list item 
             const userPost = generatePost(userName, comment);
             commentFeed.appendChild(userPost);
+
+            userInput.value = '';
+            emailInput.value = '';
+            textArea.value = '';
+
+        } else if (userName && !comment) {
+            alert(`${userName}, add a comment!`)
+
+        } else if (!userName && comment) {
+            alert(`Thanks for your input! Please add your name too!`)
         }
 
-        userInput.value = '';
-        textArea.value = '';
     })
 
 
 
 
 
-// console
+// For the hamburger menu's 
+
