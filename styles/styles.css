@@ -989,6 +989,38 @@ footer {
   margin-right: 0px;
 }
 
+.hover-pic {
+  z-index: 10;
+  -webkit-animation: grow 10s ease-in-out 1;
+          animation: grow 10s ease-in-out 1;
+}
+
+@-webkit-keyframes grow {
+  0%, 100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+  10%, 50% {
+    -webkit-transform: scale(1.2) translateY(-5%);
+            transform: scale(1.2) translateY(-5%);
+    -webkit-box-shadow: 0 10px 10px black;
+            box-shadow: 0 10px 10px black;
+  }
+}
+
+@keyframes grow {
+  0%, 100% {
+    -webkit-transform: scale(1) translateY(0);
+            transform: scale(1) translateY(0);
+  }
+  10%, 50% {
+    -webkit-transform: scale(1.2) translateY(-5%);
+            transform: scale(1.2) translateY(-5%);
+    -webkit-box-shadow: 0 10px 10px black;
+            box-shadow: 0 10px 10px black;
+  }
+}
+
 .blog-header {
   background-image: url("../assets/blog-header-1.jpg");
 }

@@ -285,3 +285,23 @@
         }
     } 
 }
+
+//dynamically added 
+.hover-pic {
+    // position: relative;
+    z-index: 10;
+    animation: grow 10s ease-in-out 1;
+}
+
+@keyframes grow {
+    0%, 100% {
+        transform: scale(1) translateY(0);
+        
+    }
+
+    10%, 50% {
+     
+        transform: scale(1.2) translateY(-5%);
+        box-shadow: 0 10px 10px black;
+    }
+}
