@@ -10,11 +10,8 @@ heading.addEventListener('mouseleave', function() {
   
 // when the user drags their mouse over a photo in the gallery:
 // the photo will increase in size by 25%,
-// the rest of the gallery with become slightly opaque
-// the photo will over lap the others 
 
 const gallery = document.querySelectorAll('.gallery-img-container');
-console.log(gallery);
 
 for (let picture of gallery) {
     picture.addEventListener('mouseover', function() {
